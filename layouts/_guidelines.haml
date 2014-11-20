@@ -2,5 +2,9 @@
   - @guidelines.each do |guideline|
     %li.guideline
       %div.text
+        - unless guideline[:title].empty?
+          %h3
+            = guideline[:title]
+            = edit_link_to(guideline) if @config[:env] == "development"
+
         = guideline.compiled_content(:snapshot => :last)
-        = edit_link_to(guideline) if @config[:env] == "development"
