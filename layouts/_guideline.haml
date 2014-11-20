@@ -1,0 +1,10 @@
+- item = @items["/guidelines/#{name}/"]
+
+%li.guideline
+  %div.text
+    - unless item[:title].empty?
+      %h3
+        = item[:title]
+        = edit_link_to(item) if @config[:env] == "development"
+
+    = item.compiled_content(:snapshot => :last)

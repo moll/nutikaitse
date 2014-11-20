@@ -1,27 +1,113 @@
 ---
 title: "Nutikaitse"
 ---
-- guidelines = items_by_kind("guideline").group_by {|g| g[:category] }
-
 %header#header
   %h1 Nutikaitse
 
 %section
   %h2 Autentimine
-  = render "_guidelines", :guidelines => guidelines["authentication"]
+  %ol.guidelines
+    = render "_guideline", :name => "015"
+    = render "_guideline", :name => "017"
+    = render "_guideline", :name => "018"
+    = render "_guideline", :name => "020"
+    = render "_guideline", :name => "021"
+    = render "_guideline", :name => "023"
+    = render "_guideline", :name => "031"
+    = render "_guideline", :name => "032"
+    = render "_guideline", :name => "033"
+    = render "_guideline", :name => "035"
+    = render "_guideline", :name => "036"
+    = render "_guideline", :name => "038"
+    = render "_guideline", :name => "042"
+    = render "_guideline", :name => "053"
+    = render "_guideline", :name => "072"
+    = render "_guideline", :name => "073"
+    = render "_guideline", :name => "074"
 
 %section
   %h2 Andmete kaitse seadmes
-  = render "_guidelines", :guidelines => guidelines["data"]
+  %ol.guidelines
+    = render "_guideline", :name => "001"
+    = render "_guideline", :name => "002"
+    = render "_guideline", :name => "003"
+    = render "_guideline", :name => "004"
+    = render "_guideline", :name => "005"
+    = render "_guideline", :name => "006"
+    = render "_guideline", :name => "007"
+    = render "_guideline", :name => "008"
+    = render "_guideline", :name => "009"
+    = render "_guideline", :name => "010"
+    = render "_guideline", :name => "011"
+    = render "_guideline", :name => "013"
+    = render "_guideline", :name => "014"
+    = render "_guideline", :name => "019"
+    = render "_guideline", :name => "025"
+    = render "_guideline", :name => "049"
+    = render "_guideline", :name => "052"
+    = render "_guideline", :name => "054"
+    = render "_guideline", :name => "057"
+    = render "_guideline", :name => "068"
+    = render "_guideline", :name => "069"
+    = render "_guideline", :name => "075"
 
 %section
   %h2 Andmete kaitse võrgus
-  = render "_guidelines", :guidelines => guidelines["network"]
+  %ol.guidelines
+    = render "_guideline", :name => "016"
+    = render "_guideline", :name => "024"
+    = render "_guideline", :name => "026"
+    = render "_guideline", :name => "027"
+    = render "_guideline", :name => "028"
+    = render "_guideline", :name => "029"
+    = render "_guideline", :name => "030"
+    = render "_guideline", :name => "034"
+    = render "_guideline", :name => "040"
+    = render "_guideline", :name => "041"
+    = render "_guideline", :name => "043"
+    = render "_guideline", :name => "044"
+    = render "_guideline", :name => "045"
+    = render "_guideline", :name => "076"
 
 %section
   %h2 Rakenduse kaitse
-  = render "_guidelines", :guidelines => guidelines["app"]
+  %ol.guidelines
+    = render "_guideline", :name => "012"
+    = render "_guideline", :name => "022"
+    = render "_guideline", :name => "037"
+    = render "_guideline", :name => "039"
+    = render "_guideline", :name => "046"
+    = render "_guideline", :name => "047"
+    = render "_guideline", :name => "048"
+    = render "_guideline", :name => "050"
+    = render "_guideline", :name => "051"
+    = render "_guideline", :name => "055"
+    = render "_guideline", :name => "056"
+    = render "_guideline", :name => "058"
+    = render "_guideline", :name => "059"
+    = render "_guideline", :name => "060"
+    = render "_guideline", :name => "061"
+    = render "_guideline", :name => "062"
+    = render "_guideline", :name => "063"
+    = render "_guideline", :name => "064"
+    = render "_guideline", :name => "065"
+    = render "_guideline", :name => "066"
+    = render "_guideline", :name => "067"
+    = render "_guideline", :name => "070"
+    = render "_guideline", :name => "071"
+    = render "_guideline", :name => "077"
 
 %section
   %h2 Kasutusmugavus
-  = render "_guidelines", :guidelines => guidelines["ux"]
+  %ol.guidelines
+    = render "_guideline", :name => "078"
+    = render "_guideline", :name => "079"
+    = render "_guideline", :name => "080"
+    = render "_guideline", :name => "081"
+    = render "_guideline", :name => "082"
+    = render "_guideline", :name => "083"
+    = render "_guideline", :name => "084"
+    = render "_guideline", :name => "085"
+    = render "_guideline", :name => "086"
+    = render "_guideline", :name => "087"
+    = render "_guideline", :name => "088"
