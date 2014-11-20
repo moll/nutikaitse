@@ -1,6 +1,27 @@
 ---
 title: "Nutikaitse"
 ---
-%ol#guidelines
-  - items_by_kind("guideline").each do |guideline|
-    %li= guideline.compiled_content(:snapshot => :last)
+- guidelines = items_by_kind("guideline").group_by {|g| g[:category] }
+
+%header#header
+  %h1 Nutikaitse
+
+%section
+  %h2 Autentimine
+  = render "_guidelines", :guidelines => guidelines["authentication"]
+
+%section
+  %h2 Andmete kaitse seadmes
+  = render "_guidelines", :guidelines => guidelines["data"]
+
+%section
+  %h2 Andmete kaitse võrgus
+  = render "_guidelines", :guidelines => guidelines["network"]
+
+%section
+  %h2 Rakenduse kaitse
+  = render "_guidelines", :guidelines => guidelines["app"]
+
+%section
+  %h2 Kasutusmugavus
+  = render "_guidelines", :guidelines => guidelines["ux"]

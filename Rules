@@ -13,6 +13,7 @@
 #
 PAGE_EXTENSION = %w[haml md]
 KINDS = {"guideline" => %r(^/guidelines/[^/]+/$)}
+noop = proc {}
 
 preprocess do
   @config[:env] = ENV["NANOC_ENV"].downcase if ENV["NANOC_ENV"]
@@ -22,12 +23,15 @@ preprocess do
   end
 end
 
+ignore "/_*/"
+
+compile KINDS["guideline"] do filterify item end
+route KINDS["guideline"], &noop
+
 compile "*" do
   filterify item
   layout "default" if PAGE_EXTENSION.include?(item[:extension])
 end
-
-ignore "/guidelines/*/"
 
 route "*" do routify item end
 layout "*", :haml, :format => :html5
