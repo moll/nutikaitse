@@ -12,11 +12,20 @@
 #   because “*” matches zero or more characters.
 #
 PAGE_EXTENSION = %w[haml md]
+KINDS = {"guideline" => %r(^/guidelines/[^/]+/$)}
+
+preprocess do
+	@items.each do |item|
+    KINDS.find {|type, path| item[:kind] = type if item.identifier =~ path }
+  end
+end
 
 compile "*" do
   filterify item
   layout "default" if PAGE_EXTENSION.include?(item[:extension])
 end
+
+ignore "/guidelines/*/"
 
 route "*" do routify item end
 layout "*", :haml, :format => :html5

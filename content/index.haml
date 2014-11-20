@@ -1,4 +1,6 @@
 ---
 title: "Nutikaitse"
 ---
-%p Hello, World!
+%ol#guidelines
+  - items_by_kind("guideline").each do |guideline|
+    %li= guideline.compiled_content(:snapshot => :last)

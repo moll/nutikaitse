@@ -9,3 +9,16 @@ body {
   font-family: Helvetica, sans-serif;
   font-size: 15px;
 }
+
+#guidelines {
+  max-width: 620px;
+  margin: 20px auto;
+
+  p + p { margin-top: 20px; }
+
+  li + li {
+    border-top: 1px dashed #ccc;
+    padding-top: 20px;
+    margin-top: 20px;
+  }
+}
