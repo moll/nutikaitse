@@ -1,0 +1,11 @@
+@import "compass/reset";
+@import "compass/css3/box-sizing";
+
+* { @include box-sizing(border-box) }
+
+body {
+  background: white;
+  color: black;
+  font-family: Helvetica, sans-serif;
+  font-size: 15px;
+}
