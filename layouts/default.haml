@@ -15,4 +15,6 @@
     -# http://www.chromium.org/developers/how-tos/chrome-frame-getting-started
     %meta(http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1")
 
+    = @config[:env] == "development" ? render("_livereload") : ""
+
   %body= yield

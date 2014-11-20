@@ -15,6 +15,8 @@ PAGE_EXTENSION = %w[haml md]
 KINDS = {"guideline" => %r(^/guidelines/[^/]+/$)}
 
 preprocess do
+  @config[:env] = ENV["NANOC_ENV"].downcase if ENV["NANOC_ENV"]
+
 	@items.each do |item|
     KINDS.find {|type, path| item[:kind] = type if item.identifier =~ path }
   end
