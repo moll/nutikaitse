@@ -1,4 +1,6 @@
 %ol.guidelines
   - @guidelines.each do |guideline|
     %li.guideline
-      %div.text= guideline.compiled_content(:snapshot => :last)
+      %div.text
+        = guideline.compiled_content(:snapshot => :last)
+        = edit_link_to(guideline) if @config[:env] == "development"

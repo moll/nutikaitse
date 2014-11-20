@@ -70,3 +70,10 @@ ol.guidelines {
   p + p { margin-top: 20px; }
   ul, ol { margin-top: 10px; }
 }
+
+a.edit {
+  color: #e0e0e0 !important;
+  font-size: 16px !important;
+  text-decoration: none !important;
+  &:hover { color: $green !important; }
+}
