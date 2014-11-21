@@ -62,6 +62,12 @@ section {
   & + section { margin-top: 80px; }
 }
 
+nav,
+section {
+  page-break-before: always;
+  break-before: page;
+}
+
 section {
   p { line-height: 1.4; }
   p + p { margin-top: 20px; }
