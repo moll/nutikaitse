@@ -1,0 +1,6 @@
+---
+title: "Autentimise kontekst"
+---
+Autentimise turvalisemaks muutmiseks on võimalik jälgida IP-aadresse ja
+vajadusel kasutada kontekstipõhiseid piiranguid – nt lubada autentimist ainult
+kindlaksmääratud piirkonnast (IP-aadresside vahemiku asukoha põhiselt).

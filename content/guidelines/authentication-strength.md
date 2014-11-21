@@ -1,0 +1,7 @@
+---
+title: "Autentimismehhanismi tugevus"
+---
+Rakendusse sisenemiseks kasutatava autentimismehhanismi tugevus peab sõltuma
+sellest, kui tundlikke andmeid rakendus töötleb (nt isikuandmed, rahalised
+toimingud). Kui kasutaja omale rakenduse või pilveteenuse parooli valib, siis on
+hea anda kohest tagasisidet sisestatud parooli tugevuse kohta.

@@ -20,6 +20,9 @@ preprocess do
 
 	@items.each do |item|
     KINDS.find {|type, path| item[:kind] = type if item.identifier =~ path }
+
+    # is_hidden is for sidemap
+    item[:is_hidden] = true if item[:hidden]
   end
 end
 

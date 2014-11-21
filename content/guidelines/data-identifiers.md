@@ -1,0 +1,7 @@
+---
+title: "Identifitseerimiskoodid"
+---
+Andmekirjete juures tuleks alati kasutada unikaalseid identifitseerimiskoode,
+mis ei ole jagatud teiste rakendustega. Identifikaatorina ei ole soovitav
+kasutada ka nutiseadme identifitseerimiskoodi (kui selleks pole mõjuvat põhjust)
+vaid parem on kasutada rakendusesiseselt genereeritud koode.

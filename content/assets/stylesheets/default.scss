@@ -66,6 +66,8 @@ ol.guidelines {
       font-size: 36px;
       color: white;
     }
+
+    &.hidden:before { background: #888A8E; }
   }
 
   li.guideline + li { margin-top: 40px; }

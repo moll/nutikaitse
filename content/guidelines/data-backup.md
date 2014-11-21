@@ -1,0 +1,5 @@
+---
+title: "Andmete varundamine"
+---
+Andmete regulaarsel varundamisel peab paroolid ja autoriseerimistunnused
+sellesse kaasata ainult krüpteeritud või räsitud kujul.
