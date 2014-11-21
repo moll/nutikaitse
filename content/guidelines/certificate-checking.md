@@ -1,5 +1,5 @@
 ---
-title: "SSL-andmeühenduskanal"
+title: "Sertifikaatide kontrollimine"
 ---
 Turvalise SSL-andmeühenduskanali võib luua alles peale teenusserveri identiteedi
 kontrollimist, st mõlema suhtleva osapoole turvasertifikaatide usaldusväärsust

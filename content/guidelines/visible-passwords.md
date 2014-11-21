@@ -1,6 +1,8 @@
 ---
 title: "Nähtavad paroolid"
 ---
-Tuleb tagada, et paroolid ja võtmed poleks nähtavad seadme vahemälus ja
-töölogides. Samuti ei tohiks paroole kuvada ekraanil vaid tuleb need maskeerida
-(nt tärnidega).
+Paroolide sisestamise puhul tasub kaaluda, kas neid maskeerida tärnidega või
+mitte.  Mitte maskeerimine võib hoopis turvalisust ja kasutusmugavust tõsta,
+kuna vähendab vigasid ja võimaldab inimestel kasutada keerulisemaid paroole.
+
+Vaata lisaks: <http://www.nngroup.com/articles/stop-password-masking/>

@@ -1,5 +1,6 @@
 ---
 title: "Andmete salvestamine serverisse"
+hidden: true
 ---
 Andmete salvestamisel tuleb võimalusel eelistada andmete salvestamist
 teenusserverisse, mitte kasutaja nutiseadmesse (eeldusel, et nutiseadme ja

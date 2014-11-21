@@ -1,5 +1,5 @@
 ---
-title: "Sertifikaadid"
+title: "Sertifikaatide usaldusväärsus"
 ---
 Kasutada tohib ainult usaldusväärsete sertifitseerimiskeskuste poolt
 allkirjastatud turvasertifikaate. Tuleb olla ettevaatlik omaallkirjastatud
