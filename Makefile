@@ -41,3 +41,4 @@ clean:
 .PHONY: compile autocompile
 .PHONY: prune clean
 .PHONY: server
+.PHONY: guideline guidelines
