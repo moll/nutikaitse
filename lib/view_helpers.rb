@@ -19,3 +19,7 @@ def edit_link_to(item)
 
   %(<a href="#{url}" class="edit">✎</a>)
 end
+
+def image_path(img)
+  Compass.configuration.http_images_path + "/" + img
+end

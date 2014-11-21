@@ -27,7 +27,7 @@ preprocess do
   end
 end
 
-ignore "/_*/"
+ignore "*/_*/"
 
 compile KINDS["guideline"] do filterify item end
 route KINDS["guideline"], &noop
