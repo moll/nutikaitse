@@ -44,10 +44,27 @@ body {
   }
 
   a {
-    color: $green;
+    color: $black;
     font-size: 18px;
     text-decoration: none;
   }
+}
+
+header,
+nav,
+section {
+  max-width: 620px;
+  margin: 0 auto;
+
+  & + section { margin-top: 80px; }
+}
+
+section {
+  p { line-height: 1.4; }
+  p + p { margin-top: 20px; }
+  ul, ol { margin-top: 10px; margin-bottom: 10px; }
+  a { word-wrap: break-word; }
+  p + h3 { margin-top: 20px; }
 }
 
 section h2 {
@@ -60,15 +77,6 @@ section h2 {
 
 section h3 {
   font-weight: bold;
-}
-
-header,
-nav,
-section {
-  max-width: 620px;
-  margin: 0 auto;
-
-  & + section { margin-top: 80px; }
 }
 
 ol.guidelines {
@@ -101,10 +109,6 @@ ol.guidelines {
 
   li.guideline + li { margin-top: 40px; }
   div.text { margin-left: 80px; }
-  p { line-height: 1.4; }
-  p + p { margin-top: 20px; }
-  ul, ol { margin-top: 10px; }
-  a { word-wrap: break-word; }
 }
 
 a.edit {
