@@ -31,6 +31,10 @@ guidelines:
 	  cat | fmt -w80 >> "$(GUIDELINES)/$$i.md"; \
 	done
 
+publish:
+	@bundle exec nanoc compile
+	@bundle exec nanoc deploy -t default
+
 prune:
 	bundle exec nanoc prune --yes
 
@@ -39,6 +43,7 @@ clean:
 
 .PHONY: love
 .PHONY: compile autocompile
-.PHONY: prune clean
 .PHONY: server
 .PHONY: guideline guidelines
+.PHONY: publish
+.PHONY: prune clean

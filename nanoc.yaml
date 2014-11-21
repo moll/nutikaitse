@@ -22,3 +22,21 @@ checks:
     #
     # E.g.: exclude: ["^/server_status"]
     exclude: []
+
+deploy:
+  default:
+    kind: rsync
+    dst: "moll:/home/public/documents/nutikaitse"
+    # -n dry run
+    # -v verbose
+    # -r recurse
+    # -z compress
+    # -i itemize changes, shows them
+    # -t preserve modification times
+    # -O omit directories from --times/-t
+    options: ["-rvziOt", "--chmod=u=rwX,go=rX", "--delete-after"]
+
+  dry:
+    kind: rsync
+    dst: "moll:/home/public/documents/nutikaitse"
+    options: ["-rvziOtn", "--chmod=u=rwX,go=rX", "--delete-after"]
