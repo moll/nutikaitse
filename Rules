@@ -12,6 +12,7 @@
 #   because “*” matches zero or more characters.
 #
 PAGE_EXTENSION = %w[haml md]
+RELATIVIZE = %w[html css]
 KINDS = {"guideline" => %r(^/guidelines/[^/]+/$)}
 noop = proc {}
 
@@ -34,6 +35,11 @@ route KINDS["guideline"], &noop
 compile "*" do
   filterify item
   layout "default" if PAGE_EXTENSION.include?(item[:extension])
+
+  if @config[:env] == "production"
+    ext = rep.raw_path[/[^.]+$/]
+    filter :relativize_paths, :type => ext.to_sym if RELATIVIZE.include?(ext)
+  end
 end
 
 route "*" do routify item end

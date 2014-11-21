@@ -1,5 +1,6 @@
 source "https://rubygems.org"
 gem "nanoc"
+gem "nokogiri"
 
 group :development do
   gem "adsf"
