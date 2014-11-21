@@ -1,8 +1,0 @@
----
-title: "Sessioonihaldus"
-hidden: true
----
-Pärast esmast autentimist peab ka edasine rakenduse sessioonihaldus toimuma
-turvalisel viisil, seda tagavate sobivate turvaprotokollide vahendusel. Näiteks
-kasutada autoriseerimistunnuste korduvsaatmist igal päringul (eriti kui päring
-annab eelisjuurdepääsu või võimaldab teha muudatusi).
