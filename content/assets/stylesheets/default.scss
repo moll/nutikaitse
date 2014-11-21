@@ -14,7 +14,22 @@ body {
 }
 
 #header {
-  margin: 200px 0;
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+#toc {
+  li {
+    list-style-type: none;
+    text-align: center;
+    line-height: 1.4;
+  }
+
+  a {
+    color: $green;
+    font-size: 18px;
+    text-decoration: none;
+  }
 }
 
 h1 {
@@ -35,6 +50,8 @@ h3 {
   font-weight: bold;
 }
 
+header,
+nav,
 section {
   max-width: 620px;
   margin: 0 auto;
