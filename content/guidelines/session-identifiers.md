@@ -9,4 +9,5 @@ Tuleb arvestada, et juhuarvude generaatorid väljastavad samasuguse sisendmuutuj
 (seed) puhul küll juhuslikke arve, aga need on etteprognoositavad. Seetõttu
 on oluline kasutada platvormi krüptograafiliselt turvalist juhuarvude generaatorit.
 
-Vaata lisaks: <https://en.wikipedia.org/wiki/Cryptographically_secure_pseudorandom_number_generator>
+Vaata lisaks:  
+<https://en.wikipedia.org/wiki/Cryptographically_secure_pseudorandom_number_generator>
