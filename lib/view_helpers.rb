@@ -1,8 +1,30 @@
 include Nanoc::Helpers::Rendering
 
-def stylesheet_tag(path)
+def stylesheet_tag(path, opts = {})
   path = "/assets/stylesheets/#{path}.css" if path.is_a? Symbol
-  %(<link rel="stylesheet" type="text/css" href="#{path}">)
+  args = opts_to_args(opts)
+  %(<link rel="stylesheet" type="text/css" href="#{path}"#{args}>)
+end
+
+def javascript_tag(path, opts = {})
+  path = "/assets/javascripts/#{path}.js" if path.is_a?(Symbol)
+  args = opts_to_args(opts)
+  %(<script src="#{path}"#{args}></script>)
+end
+
+def opts_to_args(opts)
+  args = opts.reduce([]) do |args, pair|
+    arg, val = pair
+
+    case val
+    when TrueClass
+      args << arg.to_s
+    else
+      args << "#{arg}=\"#{val}\""
+    end
+  end
+
+  args.empty?? "" : " " + args.join(" ")
 end
 
 def items_by_kind(kind)

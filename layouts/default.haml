@@ -18,3 +18,4 @@
     = @config[:env] == "development" ? render("_livereload") : ""
 
   %body= yield
+  = javascript_tag :default

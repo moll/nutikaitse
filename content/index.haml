@@ -2,266 +2,295 @@
 title: "NutiKaitse"
 ---
 %header#header
-  %img.logo(alt="Nutikaitse"){:src => image_path("nutikaitse.png")}
-  %h1 Nutirakenduste turvalise arenduse suunised
-  %h2 Vaata Maailma SA
-
-%nav#toc
-  %h2 Sisukord
-  %ol
-    %li
-      %a(href="#intro") Sissejuhatus
-    %li
-      %a(href="#authentication") Autentimine
-    %li
-      %a(href="#data") Andmete kaitse seadmes
-    %li
-      %a(href="#network") Andmete kaitse võrgus
-    %li
-      %a(href="#app") Rakenduse kaitse
-    %li
-      %a(href="#glossary") Mõisted
+  %center
+    %img.logo(alt="Nutikaitse"){:src => image_path("nutikaitse.png")}
+    %h1 Nutirakenduste turvalise arenduse suunised
+    %h2 Vaata Maailma SA
 
 %section#intro
-  %h2 Sissejuhatus
-  :markdown
-    Nutirakenduste turvalise arenduse suunised on välja töötatud projekti
-    „Nutikaitse 2017“ raames. „NutiKaitse 2017“ on 2013 aasta novembris
-    algatatud riigi ja erasektori koostöös läbiviidav projekt, mille eesmärk on
-    kaasa aidata mobiilsete e-teenuste ja lahenduste turvalisele toimimisele ja
-    kasutamisele ajal, mil veebitoimingud on kolinud inimese taskusse.
+  %center
+    .left
+      :markdown
+        Dokumendi eesmärgiks on sätestada põhinõuded ja suunised, mida tuleb
+        jälgida nutiseadmete jaoks rakenduste väljatöötamisel, sh nii riiklike
+        tellimuste puhul kui soovi korral ka eraettevõtluses. Nutirakenduste
+        arenduse suunised on mõeldud töövahendina kasutamiseks nii arenduste
+        tellijale kui arendajale.
 
-    „NutiKaitse 2017“ koostööleppe algatajad ja allkirjastajad on:
+        Dokument käsitleb erinevaid nutirakenduste arendusega seotud teemasid.
+        Teemade kaupa on välja toodud põhinõuded, millega tuleb arendamisel
+        arvestada, et lõpptulemusena valmiks turvaline ja mugavalt kasutatav
+        mobiilirakendus, mille väljatöötamisel on arvesse võetud parimaid
+        arenduspraktikaid.
 
-    - Sertifitseerimiskeskus
-    - Riigi Infosüsteemi Amet
-    - Swedbank Eesti
-    - SEB Pank
-    - Elion Ettevõtted
-    - EMT
-    - Elisa Eesti
-    - Tele2 Eesti
+    .right
+      :markdown
+        Nutirakenduste turvalise arenduse suunised on välja töötatud projekti
+        "Nutikaitse 2017" raames. Project on 2013 aasta novembris algatatud
+        ning riigi ja erasektori koostöös läbiviidav, mille eesmärk on kaasa
+        aidata mobiilsete e-teenuste ja lahenduste turvalisele toimimisele ja
+        kasutamisele ajal, mil veebitoimingud on kolinud inimese taskusse.
 
-    Projekti koordineerib Vaata Maailma Sihtasutus. Koostööleppega liitujad
-    soovivad üheskoos tõsta nutiseadmete kasutajate, arendajate ja müüjate
-    turvateadlikkust ning kasutamisoskusi, luues seejuures võimalusi, et
-    turvaline tarkvara oleks lihtsalt ja kasutajasõbralikult kättesaadav.
+        Projekti koordineerib Vaata Maailma Sihtasutus. Koostööleppega liitujad
+        soovivad üheskoos tõsta nutiseadmete kasutajate, arendajate ja müüjate
+        turvateadlikkust ning kasutamisoskusi, luues seejuures võimalusi, et
+        turvaline tarkvara oleks lihtsalt ja kasutajasõbralikult kättesaadav.
 
-  %h3 Dokumendi eesmärk
-  :markdown
-    Dokumendi eesmärgiks on sätestada põhinõuded ja suunised, mida tuleb
-    jälgida nutiseadmete jaoks rakenduste väljatöötamisel, sh nii riiklike
-    tellimuste puhul kui soovi korral ka eraettevõtluses.
+    .both
+      %h3 Koostööleppe algatajad ja allkirjastajad
+      :markdown
+        - [Sertifitseerimiskeskus](https://sk.ee)
+        - [Riigi Infosüsteemi Amet](https://www.ria.ee)
+        - [Swedbank Eesti](https://www.swedbank.ee)
+        - [SEB Pank](http://www.seb.ee)
+        - [Elion Ettevõtted](https://www.elion.ee)
+        - [EMT](https://www.emt.ee)
+        - [Elisa Eesti](https://www.elisa.ee)
+        - [Tele2 Eesti](http://www.tele2.ee)
 
-    Nutirakenduste arenduse suunised on mõeldud töövahendina kasutamiseks nii
-    arenduste tellijale kui arendajale.
+      %h3 Kontakt
+      :markdown
+        - [Kristi Kivilo](mailto:kristi@vaatamaailma.ee)
+        - [Jaanus Loitmaa](mailto:jaanus@idee.ee)
+        - [Andri Möll](mailto:andri@dot.ee)
 
-    Dokument käsitleb erinevaid nutirakenduste arendusega seotud teemasid.
-    Teemade kaupa on välja toodud põhinõuded, millega tuleb arendamisel
-    arvestada, et lõpptulemusena valmiks turvaline ja mugavalt kasutatav
-    mobiilirakendus, mille väljatöötamisel on arvesse võetud parimaid
-    arenduspraktikaid.
+#toc
+  %center
+    %nav
+      %h2 Sisukord
+      %ol
+        %li
+          %a(href="#authentication") Autentimine
+        %li
+          %a(href="#data") Andmete kaitse seadmes
+        %li
+          %a(href="#network") Andmete kaitse võrgus
+        %li
+          %a(href="#app") Rakenduse kaitse
+        %li
+          %a(href="#glossary") Mõisted ja viited
 
-  %h3 Kontakt
-  :markdown
-    - [Kristi Kivilo](mailto:kristi@vaatamaailma.ee)
-    - [Jaanus Loitmaa](mailto:jaanus@idee.ee)
-    - [Andri Möll](mailto:andri@dot.ee)
+      #progress(style="display: none")
+        %span.done#progress-done
+        %span.of /
+        %span.total#progress-total
+        %br
+        %span.description Suunist tehtud
 
 %section#authentication
-  %h2 Autentimine
-  %ol.guidelines
-    = render "_guideline", :name => "authentication-strength"
-    = render "_guideline", :name => "2-factor-authentication"
-    = render "_guideline", :name => "delegated-authentication"
-    = render "_guideline", :name => "user-identity"
-    = render "_guideline", :name => "visible-passwords"
-    = render "_guideline", :name => "password-charset"
-    = render "_guideline", :name => "touch-pattern"
-    = render "_guideline", :name => "authentication-context"
-    = render "_guideline", :name => "encrypt-passwords"
-    = render "_guideline", :name => "authorization-tokens"
-    = render "_guideline", :name => "session-identifiers"
-    = render "_guideline", :name => "changing-passwords"
-    = render "_guideline", :name => "identification-permission"
-    = render "_guideline", :name => "mobile-id-code"
-    = render "_guideline", :name => "mobile-id-certificates"
-    = render "_guideline", :name => "mobile-id-messages"
-    = render "_guideline", :name => "session-logs"
-    = render "_guideline", :name => "signout"
+  %center
+    %img.icon{:src => image_path("authentication.png")}(height=72)
+    %h2 Autentimine
+    %ol.guidelines
+      = render "_guideline", :name => "authentication-strength"
+      = render "_guideline", :name => "2-factor-authentication"
+      = render "_guideline", :name => "delegated-authentication"
+      = render "_guideline", :name => "user-identity"
+      = render "_guideline", :name => "visible-passwords"
+      = render "_guideline", :name => "password-charset"
+      = render "_guideline", :name => "touch-pattern"
+      = render "_guideline", :name => "authentication-context"
+      = render "_guideline", :name => "encrypt-passwords"
+      = render "_guideline", :name => "authorization-tokens"
+      = render "_guideline", :name => "session-identifiers"
+      = render "_guideline", :name => "changing-passwords"
+      = render "_guideline", :name => "identification-permission"
+      = render "_guideline", :name => "mobile-id-code"
+      = render "_guideline", :name => "mobile-id-certificates"
+      = render "_guideline", :name => "mobile-id-messages"
+      = render "_guideline", :name => "session-logs"
+      = render "_guideline", :name => "signout"
 
 %section#data
-  %h2 Andmete kaitse seadmes
-  %ol.guidelines
-    = render "_guideline", :name => "data-sensitivity"
-    = render "_guideline", :name => "delicate-data"
-    = render "_guideline", :name => "principle-of-least-knowledge"
-    = render "_guideline", :name => "data-duration"
-    = render "_guideline", :name => "data-lifecycle"
-    = render "_guideline", :name => "data-encryption"
-    = render "_guideline", :name => "encryption-algorithms"
-    = render "_guideline", :name => "data-encryption-vendor"
-    = render "_guideline", :name => "context-security"
-    = render "_guideline", :name => "data-storage"
-    = render "_guideline", :name => "data-deletion"
-    = render "_guideline", :name => "data-deletion-remotely"
-    = render "_guideline", :name => "data-backup"
-    = render "_guideline", :name => "privacy-policy"
-    = render "_guideline", :name => "data-leakage"
-    = render "_guideline", :name => "data-validation"
-    = render "_guideline", :name => "digital-signature-algorithms"
-    = render "_guideline", :name => "data-server"
+  %center
+    %img.icon{:src => image_path("data.png")}(height=72)
+    %h2 Andmete kaitse seadmes
+    %ol.guidelines
+      = render "_guideline", :name => "data-sensitivity"
+      = render "_guideline", :name => "delicate-data"
+      = render "_guideline", :name => "principle-of-least-knowledge"
+      = render "_guideline", :name => "data-duration"
+      = render "_guideline", :name => "data-lifecycle"
+      = render "_guideline", :name => "data-encryption"
+      = render "_guideline", :name => "encryption-algorithms"
+      = render "_guideline", :name => "data-encryption-vendor"
+      = render "_guideline", :name => "context-security"
+      = render "_guideline", :name => "data-storage"
+      = render "_guideline", :name => "data-deletion"
+      = render "_guideline", :name => "data-deletion-remotely"
+      = render "_guideline", :name => "data-backup"
+      = render "_guideline", :name => "privacy-policy"
+      = render "_guideline", :name => "data-leakage"
+      = render "_guideline", :name => "data-validation"
+      = render "_guideline", :name => "digital-signature-algorithms"
+      = render "_guideline", :name => "data-server"
 
 %section#network
-  %h2 Andmete kaitse võrgus
-  %ol.guidelines
-    = render "_guideline", :name => "network-encryption"
-    = render "_guideline", :name => "certificate-trust"
-    = render "_guideline", :name => "certificate-checking"
-    = render "_guideline", :name => "certificate-expiration"
-    = render "_guideline", :name => "network-usage"
-    = render "_guideline", :name => "sms"
-    = render "_guideline", :name => "nfc"
-    = render "_guideline", :name => "server-security-testing"
-    = render "_guideline", :name => "server-hardening"
-    = render "_guideline", :name => "dos"
-    = render "_guideline", :name => "dos-test"
-    = render "_guideline", :name => "backend-testing"
-    = render "_guideline", :name => "server-logs"
-    = render "_guideline", :name => "x-user-identification"
+  %center
+    %img.icon{:src => image_path("network.png")}(height=72)
+    %h2 Andmete kaitse võrgus
+    %ol.guidelines
+      = render "_guideline", :name => "network-encryption"
+      = render "_guideline", :name => "certificate-trust"
+      = render "_guideline", :name => "certificate-checking"
+      = render "_guideline", :name => "certificate-expiration"
+      = render "_guideline", :name => "network-usage"
+      = render "_guideline", :name => "sms"
+      = render "_guideline", :name => "nfc"
+      = render "_guideline", :name => "server-security-testing"
+      = render "_guideline", :name => "server-hardening"
+      = render "_guideline", :name => "dos"
+      = render "_guideline", :name => "dos-test"
+      = render "_guideline", :name => "backend-testing"
+      = render "_guideline", :name => "server-logs"
+      = render "_guideline", :name => "x-user-identification"
 
 %section#app
-  %h2 Rakenduse kaitse
-  %ol.guidelines
-    = render "_guideline", :name => "app-permissions"
-    = render "_guideline", :name => "tokens-in-code"
-    = render "_guideline", :name => "app-testing"
-    = render "_guideline", :name => "component-security"
-    = render "_guideline", :name => "component-upgrades"
-    = render "_guideline", :name => "3rd-party-input"
-    = render "_guideline", :name => "terms-of-service"
-    = render "_guideline", :name => "user-identification"
-    = render "_guideline", :name => "terms-of-service-contradictions"
-    = render "_guideline", :name => "nonfree-features"
-    = render "_guideline", :name => "usage-patterns"
-    = render "_guideline", :name => "nonfree-authentication"
-    = render "_guideline", :name => "nonfree-confirmation"
-    = render "_guideline", :name => "nonfree-usage"
-    = render "_guideline", :name => "app-store"
-    = render "_guideline", :name => "app-store-delay"
-    = render "_guideline", :name => "app-upgrades"
-    = render "_guideline", :name => "about"
-    = render "_guideline", :name => "feedback"
-    = render "_guideline", :name => "code-interpreter"
-    = render "_guideline", :name => "code-interpreter-sandbox"
+  %center
+    %img.icon{:src => image_path("app.png")}(height=72)
+    %h2 Rakenduse kaitse
+    %ol.guidelines
+      = render "_guideline", :name => "app-permissions"
+      = render "_guideline", :name => "tokens-in-code"
+      = render "_guideline", :name => "app-testing"
+      = render "_guideline", :name => "component-security"
+      = render "_guideline", :name => "component-upgrades"
+      = render "_guideline", :name => "3rd-party-input"
+      = render "_guideline", :name => "terms-of-service"
+      = render "_guideline", :name => "user-identification"
+      = render "_guideline", :name => "terms-of-service-contradictions"
+      = render "_guideline", :name => "nonfree-features"
+      = render "_guideline", :name => "usage-patterns"
+      = render "_guideline", :name => "nonfree-authentication"
+      = render "_guideline", :name => "nonfree-confirmation"
+      = render "_guideline", :name => "nonfree-usage"
+      = render "_guideline", :name => "app-store"
+      = render "_guideline", :name => "app-store-delay"
+      = render "_guideline", :name => "app-upgrades"
+      = render "_guideline", :name => "about"
+      = render "_guideline", :name => "feedback"
+      = render "_guideline", :name => "code-interpreter"
+      = render "_guideline", :name => "code-interpreter-sandbox"
 
 %section#glossary
-  %h2 Mõisted
-  %dl
-    %dt Nutirakendus
-    %dd
-      Nutiseadme jaoks välja töötatud rakendusprogramm (app) või nutiseadme
-      jaoks kohaldatud veebirakendus.
+  %center
+    %h2 Mõisted ja viited
 
-    %dt Nutiseade
-    %dd
-      Mobiilne seade (üldjuhul nutitelefon või tahvelarvuti), mis erineb
-      lihtsast mobiiltelefonist selle poolest, et võimaldab kasutada
-      tavaarvutile omaseid funktsioone. Nutiseadmel on tavaliselt puutetundlik
-      ekraan, internetiühendus ja operatsioonisüsteem, mis võimaldab kasutada
-      allalaetavaid nutirakendusi.
+    %dl
+      %dt ENISA
+      %dd
+        :markdown
+          <http://www.enisa.europa.eu/activities/Resilience-and-CIIP/critical-applications/smartphone-security-1/smartphone-secure-development-guidelines>
 
-    %dt Mobiil-ID
-    %dd
-      Mobiil-ID on Eesti Vabariigi ID-kaardil põhinev isikusamasuse tõendamise
-      ning digitaalse allkirjastamise lahendus, mis võimaldab kasutajal end
-      mobiilseadme vahendusel autentida.
+      %dt OWASP Application Security Verification Standard (2014)
+      %dd
+        :markdown
+          <https://www.owasp.org/images/5/58/OWASP_ASVS_Version_2.pdf>
 
-    %dt Isikuandmed
-    %dd
-      %p
-        Isikuandmed on mis tahes andmed tuvastatud või tuvastatava füüsilise
-        isiku kohta, sõltumata sellest, millisel kujul või millises vormis need
-        andmed on.
+      %dt Nutirakendus
+      %dd
+        Nutiseadme jaoks välja töötatud rakendusprogramm (app) või nutiseadme
+        jaoks kohaldatud veebirakendus.
 
-      %p
-        Isikuandmete, sh delikaatsete isikuandmete, kaitset reguleerib <a
-        href="https://www.riigiteataja.ee/akt/748829">Isikuandmete Kaitse
-        Seadus</a>.
+      %dt Nutiseade
+      %dd
+        Mobiilne seade (üldjuhul nutitelefon või tahvelarvuti), mis erineb
+        lihtsast mobiiltelefonist selle poolest, et võimaldab kasutada
+        tavaarvutile omaseid funktsioone. Nutiseadmel on tavaliselt puutetundlik
+        ekraan, internetiühendus ja operatsioonisüsteem, mis võimaldab kasutada
+        allalaetavaid nutirakendusi.
 
-    %dt Delikaatsed isikuandmed
-    %dd
-      Delikaatsed isikuandmed on:
+      %dt Mobiil-ID
+      %dd
+        Mobiil-ID on Eesti Vabariigi ID-kaardil põhinev isikusamasuse tõendamise
+        ning digitaalse allkirjastamise lahendus, mis võimaldab kasutajal end
+        mobiilseadme vahendusel autentida.
 
-      %ul
-        %li
-          Poliitilisi vaateid, usulisi ja maailmavaatelisi veendumusi
-          kirjeldavad andmed, välja arvatud andmed seadusega ettenähtud korras
-          registreeritud eraõiguslike juriidiliste isikute liikmeks olemise
-          kohta;
+      %dt Isikuandmed
+      %dd
+        %p
+          Isikuandmed on mis tahes andmed tuvastatud või tuvastatava füüsilise
+          isiku kohta, sõltumata sellest, millisel kujul või millises vormis need
+          andmed on.
 
-        %li Etnilist päritolu ja rassilist kuuluvust kirjeldavad andmed;
-        %li Andmed terviseseisundi või puude kohta;
-        %li Andmed pärilikkuse informatsiooni kohta;
-        %li
-          Biomeetrilised andmed (eelkõige sõrmejälje-, peopesajälje- ja
-          silmaiirisekujutis ning geeniandmed);
-        %li Andmed seksuaalelu kohta;
-        %li Andmed ametiühingu liikmelisuse kohta;
-        %li
-          Andmed süüteo toimepanemise või selle ohvriks langemise kohta enne
-          avalikku kohtuistungit või õigusrikkumise asjas otsuse langetamist
-          või asja menetluse lõpetamist.
+        %p
+          Isikuandmete, sh delikaatsete isikuandmete, kaitset reguleerib <a
+          href="https://www.riigiteataja.ee/akt/748829">Isikuandmete Kaitse
+          Seadus</a>.
 
-      %p
-        Delikaatsete isikuandmete töötleja peab delikaatsete isikuandmete
-        töötlemise registreerima Andmekaitse inspektsioonis va juhul kui ta
-        on määranud isikuandmete kaitse eest vastutava isiku. Isikuandmete
-        kaitse eest vastutava isiku määramisest ja tema volituste lõppemisest
-        tuleb viivitamata teavitada Andmekaitse Inspektsiooni.
+      %dt Delikaatsed isikuandmed
+      %dd
+        Delikaatsed isikuandmed on:
 
-      %p
-        Isikuandmete, sh delikaatsete isikuandmete, kaitset reguleerib <a
-        href="https://www.riigiteataja.ee/akt/748829">Isikuandmete Kaitse
-        Seadus</a>.
+        %ul
+          %li
+            Poliitilisi vaateid, usulisi ja maailmavaatelisi veendumusi
+            kirjeldavad andmed, välja arvatud andmed seadusega ettenähtud korras
+            registreeritud eraõiguslike juriidiliste isikute liikmeks olemise
+            kohta;
 
-    %dt API
-    %dd
-      API (<em>Application Programming Interface</em>) on tarkvaraprogrammi
-      rakendusliides, mis võimaldab tarkvararakendustel omavahel suhelda,
-      kasutades selleks kindlaksmääratud reeglistikku (suhtlusprotokolli).
+          %li Etnilist päritolu ja rassilist kuuluvust kirjeldavad andmed;
+          %li Andmed terviseseisundi või puude kohta;
+          %li Andmed pärilikkuse informatsiooni kohta;
+          %li
+            Biomeetrilised andmed (eelkõige sõrmejälje-, peopesajälje- ja
+            silmaiirisekujutis ning geeniandmed);
+          %li Andmed seksuaalelu kohta;
+          %li Andmed ametiühingu liikmelisuse kohta;
+          %li
+            Andmed süüteo toimepanemise või selle ohvriks langemise kohta enne
+            avalikku kohtuistungit või õigusrikkumise asjas otsuse langetamist
+            või asja menetluse lõpetamist.
 
-    %dt X-tee
-    %dd
-      X-tee on riigi infosüsteemide andmevahetuskiht, mille põhieesmärgiks on
-      riigi kodanikele, asutustele ja ametnikele riigi terviklikele
-      andmekogudele mugava ligipääsu tagamine ja turvalise andmevahetuse
-      võimaldamine.
+        %p
+          Delikaatsete isikuandmete töötleja peab delikaatsete isikuandmete
+          töötlemise registreerima Andmekaitse inspektsioonis va juhul kui ta
+          on määranud isikuandmete kaitse eest vastutava isiku. Isikuandmete
+          kaitse eest vastutava isiku määramisest ja tema volituste lõppemisest
+          tuleb viivitamata teavitada Andmekaitse Inspektsiooni.
 
-    %dt Teenusserver
-    %dd
-      Käesolevas dokumendis loetakse teenusserveriks nutiseadmest väljaspool
-      asuvat teenusepakkuja tugiteenuste komplekti, mis on vajalik
-      nutirakenduse täielikuks toimimiseks.
+        %p
+          Isikuandmete, sh delikaatsete isikuandmete, kaitset reguleerib <a
+          href="https://www.riigiteataja.ee/akt/748829">Isikuandmete Kaitse
+          Seadus</a>.
 
-    %dt ISKE
-    %dd
-      %p
-        Riigi poolt väljatöötatud <a
-        href="https://www.ria.ee/iske/">„infosüsteemide kolmeastmeline
-        etalonturbe süsteem“</a>, mis on loodud eelkõige riigi ja kohaliku
-        omavalitsuse infosüsteemidele ning nendega seotud infovaradele
-        turvalisuse tagamiseks.
+      %dt API
+      %dd
+        API (<em>Application Programming Interface</em>) on tarkvaraprogrammi
+        rakendusliides, mis võimaldab tarkvararakendustel omavahel suhelda,
+        kasutades selleks kindlaksmääratud reeglistikku (suhtlusprotokolli).
 
-      %p
-        ISKE väljatöötamisel ja arendamisel on aluseks võetud Saksamaa BSI
-        (Bundesamt für Sicherheit in der Informationstechnik) avaldatav
-        infoturbe standard (IT-Grundschutz).
+      %dt X-tee
+      %dd
+        X-tee on riigi infosüsteemide andmevahetuskiht, mille põhieesmärgiks on
+        riigi kodanikele, asutustele ja ametnikele riigi terviklikele
+        andmekogudele mugava ligipääsu tagamine ja turvalise andmevahetuse
+        võimaldamine.
 
-    %dt AKI
-    %dd
-      %a(href="https://www.aki.ee") Andmekaitse Inspektsioon
+      %dt Teenusserver
+      %dd
+        Käesolevas dokumendis loetakse teenusserveriks nutiseadmest väljaspool
+        asuvat teenusepakkuja tugiteenuste komplekti, mis on vajalik
+        nutirakenduse täielikuks toimimiseks.
 
-    %dt RIA
-    %dd
-      %a(href="https://www.ria.ee") Riigi Infosüsteemi Amet
+      %dt ISKE
+      %dd
+        %p
+          Riigi poolt väljatöötatud <a
+          href="https://www.ria.ee/iske/">„infosüsteemide kolmeastmeline
+          etalonturbe süsteem“</a>, mis on loodud eelkõige riigi ja kohaliku
+          omavalitsuse infosüsteemidele ning nendega seotud infovaradele
+          turvalisuse tagamiseks.
+
+        %p
+          ISKE väljatöötamisel ja arendamisel on aluseks võetud Saksamaa BSI
+          (Bundesamt für Sicherheit in der Informationstechnik) avaldatav
+          infoturbe standard (IT-Grundschutz).
+
+      %dt AKI
+      %dd
+        %a(href="https://www.aki.ee") Andmekaitse Inspektsioon
+
+      %dt RIA
+      %dd
+        %a(href="https://www.ria.ee") Riigi Infosüsteemi Amet
