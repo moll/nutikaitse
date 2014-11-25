@@ -7,21 +7,9 @@
   window.addEventListener("resize", update)
   update()
 
-  window.addEventListener("scroll", function(ev) {
-    var y = window.pageYOffset
-
-    nav.style.position = y >= tops.authentication ? "fixed" : "static"
-
-    var section, i = links.length
-    if (nav.style.position == "fixed") while (i--) {
-      if (tops[links[i].getAttribute("href").slice(1)] > y) continue
-      section = links[i]
-      break
-    }
-
-    i = links.length
-    while (i--) links[i].className = section === links[i] ? "selected" : ""
-  })
+  var scroll = updateScroll.bind(null, nav, tops, links)
+  window.addEventListener("scroll", scroll)
+  scroll()
 })()
 
 ;(function() {
@@ -43,6 +31,22 @@ function updateTops(tops, els) {
     var id = els[i].getAttribute("href").slice(1)
     tops[id] = document.getElementById(id).offsetTop
   }
+}
+
+function updateScroll(nav, tops, links) {
+  var y = window.pageYOffset
+
+  nav.style.position = y >= tops.authentication ? "fixed" : "static"
+
+  var section, i = links.length
+  if (nav.style.position == "fixed") while (i--) {
+    if (tops[links[i].getAttribute("href").slice(1)] > y) continue
+    section = links[i]
+    break
+  }
+
+  i = links.length
+  while (i--) links[i].className = section === links[i] ? "selected" : ""
 }
 
 function updateChecked(el, checkboxes) {
