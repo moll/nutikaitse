@@ -81,6 +81,19 @@ title: "NutiKaitse"
   %center
     %img.icon{:src => image_path("authentication.png")}(height=72)
     %h2 Autentimine
+    :markdown
+      Tähelepanu tuleb pöörata kasutajate autentimisele ja tagada, et
+      nutirakenduses autenditud kasutaja kasutussessioon oleks kaitstud ja seda
+      ei oleks võimalik üle võtta.
+
+      Salasõnade turvalise käsitlemise puhul tuleb arvestada, et lisaks
+      rakenduse arendamisel kasutusele võetud turvameetmetele, sõltub palju
+      sellest kuidas kasutaja ise oma seadet kaitseb, sh ekraaniluku ja
+      PIN-koodide valikust, biomeetriliste tuvastusvahendite valikust, eri
+      teenuste puhul erinevate paroolide kasutamisest ning sellest kuidas
+      kasutaja seadet võõraste kätte sattumise või kadumise eest füüsiliselt
+      kaitseb.
+
     %ol.guidelines
       = render "_guideline", :name => "authentication-strength"
       = render "_guideline", :name => "2-factor-authentication"
@@ -105,6 +118,17 @@ title: "NutiKaitse"
   %center
     %img.icon{:src => image_path("data.png")}(height=72)
     %h2 Andmete kaitse seadmes
+    :markdown
+      Selleks, et viähendada seadmes asuvate andmete sh isikuandmete
+      kolmandatele osapooltele lekkimise riski, tuleb rakenduses läbi mõelda ja
+      kasutusele võtta vastavad riskide maandamise meetmed.
+
+      Euroopa Liidus on kohustuslik saada kasutaja nõusolek isikuandmete
+      töötlemiseks, sh isikutuvastusteabe kogumiseks, kui seadus ei sätesta
+      teisiti.  Kasutaja peab rakendusest leidma info või viited selle kohta
+      kuidas tema isikuandmeid töödeldakse ja milleks kasutatakse. Isikuandmete
+      töötlemise põhimõtted peavad olema kirjeldatud "privaatsustingimustes".
+
     %ol.guidelines
       = render "_guideline", :name => "data-sensitivity"
       = render "_guideline", :name => "delicate-data"
@@ -129,6 +153,17 @@ title: "NutiKaitse"
   %center
     %img.icon{:src => image_path("network.png")}(height=72)
     %h2 Andmete kaitse võrgus
+    :markdown
+      Võrguühenduste puhul tuleks lähtuda põhimõttest, et andmete liikumine
+      nutirakenduse ja võrgusihtpunktide vahel peab toimuma läbi krüpteeritud
+      andmeedastuskanalite, sest arvutivõrgu kõik osad ei ole reeglina kasutaja
+      ja rakenduse looja kontrolli all.
+
+      Suur osa nutirakendustest eeldab töötamiseks suhtlust võrgus asuvate
+      teenusserveritega. Kui teenusserverid või ühendus nendeni ei ole
+      piisavalt turvatud, siis see annab võimaluse nende ründamiseks läbi
+      mobiilirakenduse.
+
     %ol.guidelines
       = render "_guideline", :name => "network-encryption"
       = render "_guideline", :name => "certificate-trust"
@@ -149,6 +184,25 @@ title: "NutiKaitse"
   %center
     %img.icon{:src => image_path("app.png")}(height=72)
     %h2 Rakenduse kaitse
+    :markdown
+      Rakenduse loomisel tuleb veenduda, et kasutatavad kolmandate osapoolte
+      poolt loodud tarkvara valmiskomponendid on turvalised. Samuti tuleb
+      veenduda, et liidestatavad võrguteenused on turvalised.
+
+      Nutitelefoni rakendustele saab anda automaatse juurdepääsu tasulistele
+      funktsioonide nagu telefonikõned, SMS ja MMS, rändlusandmed, NFC maksed
+      jne. Selliste eelisjuurdepääsuga rakenduste loomisel tuleb eriti
+      hoolikalt võimalikke kuritarvitusi arvesse võtta. Selgitada tuleb
+      rakenduses olevad potentsiaalsed nõrgad kohad, analüüsida mis võimalused
+      need võimalikele ründajatele annavad ja kuidas tasulistele teenustele
+      ligipääsu piirata.
+
+      Rakenduste turvaline levitamine mööda ametlikke rakenduste
+      levituskanaleid on oluline. Nutiseadmete ametlikke rakendustepoode tuleb
+      eelistada, kuna nende kaudu on kasutajatele tagatud rakenduste
+      tarkvarauuendused ning seal on kasutusel lisakontrollid turvalisuse
+      tagamiseks.
+
     %ol.guidelines
       = render "_guideline", :name => "app-permissions"
       = render "_guideline", :name => "tokens-in-code"
