@@ -39,10 +39,14 @@ nav {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+#toc,
 section {
   page-break-before: always;
   break-before: page;
 
+}
+
+section {
   p { line-height: 1.5; }
   p + p { margin-top: 20px; }
   ul, ol { margin-top: 10px; margin-bottom: 10px; }
@@ -138,16 +142,6 @@ section h3 {
 #toc {
   text-align: right;
 
-  // Reset padding as it'll get ignored when position is fixed.
-  center { padding: 0; }
-
-  nav {
-    top: 0;
-    float: left;
-    padding: (40px + $icon-height + 30px) $page-padding 0;
-    width: $page-width / 3;
-  }
-
   li {
     margin-left: 0;
     line-height: 1.5;
@@ -165,12 +159,38 @@ section h3 {
     font-weight: 500;
   }
 
-  a.selected {
-    font-weight: bold;
-    color: $green;
+  @media screen {
+    // Reset padding as it'll get ignored when position is fixed.
+    center { padding: 0; }
+
+    nav {
+      top: 0;
+      float: left;
+      padding: (40px + $icon-height + 30px) $page-padding 0;
+      width: $page-width / 3;
+    }
+
+    a.selected {
+      font-weight: bold;
+      color: $green;
+    }
   }
 
-  @media print { display: none; }
+  @media print {
+    display: none;
+    &:target { display: block; }
+
+    text-align: left;
+
+    nav {
+      // JavaScript might set it to fixed when scrolling down the page.
+      // Ensure it's static when printing.
+      position: static !important;
+      width: auto;
+    }
+
+    h2 { font-weight: 400; }
+  }
 }
 
 #progress {
@@ -179,6 +199,8 @@ section h3 {
 
   .done, .of, .total { font-size: 15px; }
   .description { color: #a6a6a6; }
+
+  @media print { display: none; }
 }
 
 img.icon {
