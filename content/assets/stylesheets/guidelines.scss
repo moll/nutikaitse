@@ -1,42 +1,7 @@
-@import "reset";
-@import "lib";
-@import "compass/css3/appearance";
-$page-width: 960px;
-$page-padding: 20px;
-$icon-height: 72px;
-$green: #8CC140;
-$black: #1A1919;
-
-strong { font-weight: bold; }
-em { font-style: italic; }
-li { margin-left: 20px; }
-
-center {
-  max-width: $page-width;
-  margin: 0 auto;
-  padding: 0 $page-padding;
-  text-align: inherit;
-}
+@import "default";
 
 body {
   padding-bottom: 60px;
-
-  background: white;
-  color: black;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 14px;
-
-  // Without an explicit text-align, Internet Explorer (9 at least) has no
-  // text-align value to inherit from for <center>.
-  text-align: left;
-}
-
-h1,
-h2,
-h3,
-nav {
-  // Helvetica Neue has more weights than plain Helvetica.
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 #toc,
