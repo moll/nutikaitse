@@ -1,6 +1,9 @@
 ---
 title: "NutiKaitse"
 ---
+- content_for :head do
+  = stylesheet_tag :guidelines
+
 %header#header
   %center
     %img.logo(alt="Nutikaitse"){:src => image_path("nutikaitse.png")}
@@ -348,3 +351,5 @@ title: "NutiKaitse"
       %dt RIA
       %dd
         %a(href="https://www.ria.ee") Riigi Infosüsteemi Amet
+
+= javascript_tag :guidelines
