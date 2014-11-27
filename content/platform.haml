@@ -1,0 +1,78 @@
+---
+title: "Rakenduste platvorminõuded"
+---
+- content_for :head do
+  = stylesheet_tag :platform
+
+%header#header
+  %center
+    %img.logo(alt="Nutikaitse"){:src => image_path("nutikaitse.png")}
+    %h1 Nutirakenduste platvorminõuded
+    %h2 Vaata Maailma SA
+
+%section#requirements
+  %center
+    .left
+      %img.icon{:src => image_path("network.png")}(height=72)
+      %h2 Veeb ja hübriidrakendused
+      :markdown
+        Mobiilsete veebirakenduste arendamisel tuleks nõudmiste ja soovitustega
+        piirduda W3C poolt heaks kiidetud dokumentidega:
+
+        - [Mobile Web Application Best Practices](https://www.w3.org/TR/mwabp/)
+        - [Mobile Web Best Practices 1.0](https://www.w3.org/TR/mobile-bp/)
+        - [Web Content Accessibility Guidelines](https://www.w3.org/TR/WCAG20/)
+
+        Ei ole otstarbekas nõuded siduda konkreetsete HTMLi versioonidega (DOM,
+        CSS jne), sest tegu on on pidevalt muutuvate tehnoloogiatega. Parem on
+        lähtuda ülal mainitud heade praktikate dokumentidest.
+
+        WAP 2.0 seadmed peaksid toetama hästi XHTML Basic 1.1 standardit (WAP
+        1.0 oli WML põhine) ja CSS Mobile Profile 2.0.
+
+    .right
+      %img.icon{:src => image_path("app.png")}(height=72)
+      %h2 “Native” rakendused
+      :markdown
+        Native rakenduste juures soovitused ja nõuded peaksid lähtuma
+        kasutajate arvudest Eestis, mujal maailmas ja teatud määral ka
+        prognoosidest tulevikus.
+
+        W3Schools statistika põhjal oli jaanuar 2014 4% seadmetest mobiilsed.
+        Neist iOS 1,23%, Android 1,93% ja muu 0,84%. Selle järgi võiks nõuda,
+        et arendatavad rakendused peavad töötama iOS ja Android keskkondadel.
+
+        Market Share Reports järgi veebruar 2014 mobiilirakenduste kasutus
+        jaotud versiooniti järgmiselt:
+
+        - Android 2.3 4,55%
+        - Android 4.0 4,98%
+        - Android 4.3 6,07%
+        - Android 4.2 6,34%
+        - Android 4.1 11,58%
+        - iPhone 22,48%
+        - iPad 29,87%.
+
+        Kui kõiki üle 4,5% levikuga versioone arvestada tuleks Android tuge
+        nõuda alates 2.3+ versioonist. Kui tingimuseks võtta kõik üle 1% tuleks
+        ntx arvestada ka Symbian (3,5%) ja Java ME (4,44%), küll aga mitte
+        Windows Phone 7.5, mis oli 0,44%.
+
+        StatCounteri järgi piirates piirkonna Eesti peale saame tulemuseks
+        jaanaru 2014 järgmise: Android 55,71%, iOS 38,57% ja Windows Phone
+        3,43%, kõik muu on alla 1%. Selle järgi oleks minimaalne tugi vajalik
+        ka Windows Mobile 7.5le.
+
+        Clicky järgi on Eestis kõik teised peale Android ja iOS alla 1%.
+
+        Kõige täpsema info ja suhtarvud saaks ilmselt mobiilioperaatoritelt.
+        Nõuete tekitamisel ei tohi kindlasti lähtuda vaid töögrupi või mõne
+        suurettevõtte ntx Google, Microsoft huvist vaid reaalsete kasutajate
+        tehtud otustest, mida näitab hästi meil Eestis ostetud / kasutuses
+        olevate seadmete info (operaatoritelt).
+
+        Kui üldse nõuded OS versioonidele jätta siis turvalisuse asbektist
+        lähtudes peaks need alati lähtuma viimasest (aktiivse toega)
+        põhiversioonist (ntx Android 4.x, iOS 7.x, Ubuntu Touch OS 1.x jne...).
+        Ntx kohaliku rakenduse Rahvakalender (>15 tuhat) kasutajatest 76,52% on
+        Android 4.x.

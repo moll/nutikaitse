@@ -1,0 +1,74 @@
+@import "default";
+
+body {
+  padding-bottom: 40px;
+}
+
+section {
+  p { line-height: 1.5; }
+  p + p { margin-top: 20px; }
+  ul, ol { margin-top: 10px; margin-bottom: 10px; }
+  a { word-wrap: break-word; }
+  p + h3 { margin-top: 20px; }
+
+  & + section { margin-top: 80px; }
+}
+
+section h2 {
+  line-height: 1.3;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+section h3 {
+  font-weight: bold;
+}
+
+#header {
+  margin-top: 100px;
+  margin-bottom: 70px;
+  overflow: hidden;
+
+  .logo {
+    float: left;
+    width: image-width("nutikaitse.png") / 3;
+    height: image-height("nutikaitse.png") / 3;
+  }
+
+  h1, h2 {
+    margin-left: 140px;
+  }
+
+  h1 {
+    font-size: 36px;
+    color: $black;
+    font-weight: 300;
+  }
+
+  h2 {
+    margin-top: 5px;
+    font-size: 17px;
+    font-weight: 500;
+  }
+}
+
+#requirements {
+  padding: 20px 0;
+  overflow: hidden;
+
+  center { padding: 0; }
+  p { text-align: justify; }
+
+  .left, .right {
+    width: 50%;
+    padding: $page-padding;
+  }
+
+  .left { float: left; }
+  .right { float: right; }
+}
+
+img.icon {
+  display: block;
+  margin-bottom: 30px;
+}
