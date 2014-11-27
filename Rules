@@ -42,5 +42,7 @@ compile "*" do
   end
 end
 
+route "/guidelines/" do "/index.html" end
+
 route "*" do routify item end
 layout "*", :haml, :format => :html5
