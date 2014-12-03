@@ -74,3 +74,22 @@ img.icon {
   display: block;
   margin-bottom: 30px;
 }
+
+@media print {
+  #header {
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+    .logo {
+      width: image-width("nutikaitse.png") / 3.5;
+      height: image-height("nutikaitse.png") / 3.5;
+    }
+
+    h1, h2 { margin-left: 120px; }
+
+    h1 { font-size: 30px; }
+  }
+
+  h2 { font-size: 26px; }
+  img.icon { height: 50px; margin-bottom: 20px; }
+}
