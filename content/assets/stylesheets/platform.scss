@@ -5,7 +5,7 @@ body {
 }
 
 section {
-  p { line-height: 1.5; }
+  p, h3, li { line-height: 1.5; }
   p + p { margin-top: 20px; }
   ul, ol { margin-top: 10px; margin-bottom: 10px; }
   a { word-wrap: break-word; }
