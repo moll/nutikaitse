@@ -1,4 +1,6 @@
 <div class="left">
+Nutirakenduste turvalise arenduse suunised ja Nutirakenduste platvorminõuded on valminud Majandus- ja kommunikatsiooniministeeriumi tellimusel ja Vabariigi Valitsuse tegevusprogrammis (2011.a kinnitatud) toodud tegevuste kirjeldamiseks (Nutitelefonides rakendatavate e-teenuste turvanõuete väljatöötamine; Toetatavate nutitelefonide operatsioonisüsteemide ja brauserite valimine; Nutitelefonide operatsioonisüsteemidele ja brauseritele vastava koosvõime nõuete kirjutamine).
+
 Dokumendi eesmärgiks on sätestada põhinõuded ja suunised, mida tuleb jälgida
 nutiseadmete jaoks rakenduste väljatöötamisel, sh nii riiklike tellimuste
 puhul kui soovi korral ka eraettevõtluses. Nutirakenduste arenduse suunised on
@@ -12,7 +14,7 @@ mille väljatöötamisel on arvesse võetud parimaid arenduspraktikaid.
 
 <div class="right">
 Nutirakenduste turvalise arenduse suunised on välja töötatud projekti
-"Nutikaitse 2017" raames. Project on 2013 aasta novembris algatatud
+"Nutikaitse 2017" raames. Projekt on 2013 aasta novembris algatatud
 ning riigi ja erasektori koostöös läbiviidav, mille eesmärk on kaasa
 aidata mobiilsete e-teenuste ja lahenduste turvalisele toimimisele ja
 kasutamisele ajal, mil veebitoimingud on kolinud inimese taskusse.
