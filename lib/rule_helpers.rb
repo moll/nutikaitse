@@ -10,7 +10,7 @@ def filterify(item)
 
   case item[:extension]
   when "haml";  filter :haml, :format => :html5
-  when "md";    filter :erb; filter :kramdown
+  when "md";    filter :erb; filter :kramdown, :parse_block_html => true
   when "scss";  filter :sass, Compass.sass_engine_options
   when "js";    nil
   else          filter :erb
