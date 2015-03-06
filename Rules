@@ -36,7 +36,7 @@ compile "*" do
   filterify item
   layout "default" if PAGE_EXTENSION.include?(item[:extension])
 
-  if @config[:env] == "production"
+  if @config[:env] == "production" && rep.raw_path
     ext = rep.raw_path[/[^.]+$/]
     filter :relativize_paths, :type => ext.to_sym if RELATIVIZE.include?(ext)
   end
