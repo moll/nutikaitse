@@ -2,6 +2,7 @@ NANOC_ENV = production
 GUIDELINES = content/guidelines
 last_guideline = $$(basename "$$(ls "$(GUIDELINES)" | sort -n | tail -n1)" .md)
 next_guideline = $$(expr $(last_guideline) + 1)
+export NANOC_ENV
 
 love:
 	@echo "Feel like makin' love."
