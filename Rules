@@ -17,7 +17,7 @@ KINDS = {"guideline" => %r(^/guidelines/[^/]+/$)}
 noop = proc {}
 
 preprocess do
-  @config[:env] = ENV["NANOC_ENV"].downcase if ENV["NANOC_ENV"]
+  @config[:env] = ENV["NANOC_ENV"] ? ENV["NANOC_ENV"].downcase : "production"
 
 	@items.each do |item|
     KINDS.find {|type, path| item[:kind] = type if item.identifier =~ path }
