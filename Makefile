@@ -10,6 +10,7 @@ love:
 compile:
 	@bundle exec nanoc compile
 
+autocompile: NANOC_ENV = development
 autocompile:
 	@bundle exec guard start
 
