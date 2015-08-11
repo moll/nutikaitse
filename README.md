@@ -3,7 +3,10 @@ Nutikaitse
 
 Installimine
 ------------
+Veendu, et arvutis on töötav Ruby installatsioon. Seejärel installeeri
+genereerimiseks vajalikud teegid:
 ```sh
+gem install bundler
 bundle install
 ```
 
