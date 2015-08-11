@@ -1,5 +1,6 @@
 ---
 title: "X-tee kasutaja identifitseerimine"
+hidden: true
 ---
 X-tee teenuse pakkuja peab tagama, et nutirakendusest X-tee teenusesse
 saadetavad kasutajat identifitseerivad sõnumi elemendid on korrektselt täidetud
