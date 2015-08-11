@@ -1,6 +1,6 @@
 - item = @items["/guidelines/#{name}/"]
 
-- if !item[:hidden] || @config[:env] == "development"
+- unless item[:hidden]
   %li.guideline{:class => item[:hidden] && "hidden", :name => item.name}
     %h3
       = item[:title]
