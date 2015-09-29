@@ -1,6 +1,6 @@
 ---
 title: "Autentimise kontekst"
 ---
-Autentimise turvalisemaks muutmiseks on võimalik jälgida IP-aadresse ja
-vajadusel kasutada kontekstipõhiseid piiranguid – nt lubada autentimist ainult
-kindlaksmääratud piirkonnast (IP-aadresside vahemiku asukoha põhiselt).
+Autentimise turvalisemaks muutmiseks on võimalik jälgida konteksti: seadme identifiaaktorit,
+IP-aadresse jms. Kui rakendus tuvastab ootamatu muutuse kontekstis (näiteks IP-aadressi asukohariigi
+muutuse), on soovitav rakendada täiendavaid autentimismeetmeid.

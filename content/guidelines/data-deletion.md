@@ -1,9 +1,9 @@
 ---
 title: "Andmete kustutamine"
 ---
-Salvestatud andmete krüpteerimine ja võtmehaldus on oluline, sest seni puudub
-standardne turvaline failide kustutamisprotseduur välkmälul baseeruvatest
-salvestusseadmetest. Kustutamisel failid märgitakse küll kustutatuks, aga
-andmeid ei kirjutata kohe üle uute andmetega, sest püütakse vähendada
-mäluaadressidele korduvkirjutamist ning kasutatakse pigem järgnevaid vabu
-salvestusplokke, et tagada salvestusseadme pikem eluiga.
+Kuna põhimõtteliselt puudub võimalus tagada andmete kustutamine kas pilveteenusest
+või seadme välkmälust (kustutatakse viide andmetele ja mitte andmed ise), siis 
+tuleb arvestada kõigi sel visiil salvestatud andmete sisuliselt piiramatu 
+kättesaadavusega nende talletamise hetkest. Krüpteeritud andmete puhul tuleb 
+arvestada krüptoalgoritmide efektiivsuse langust ajas: krüptitud andmete kasulikkus peab 
+vähenema kiiremini, kui nõrgeneb kasutatud krüproalgoritm. 
