@@ -9,5 +9,4 @@ implementatsioone. Mida vähem erinevaid protokolle on korraga kasutusel, seda
 lihtsam on nii kliendi kui serveri poolel garanteerida nende töökindlus ning
 turvalisus.
 
-Näiteks enamik klient-server kasutusjuhte saab täna lahendada https protokolli 
-kasutades, vajalikud teegid ja liidesed on laialt levinud.
+Näiteks enamik klient-server kasutusjuhte saab täna lahendada HTTPS protokolli kasutades, vajalikud teegid ja liidesed on laialt levinud.
