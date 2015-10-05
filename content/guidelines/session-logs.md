@@ -1,4 +1,4 @@
 ---
 title: "Kasutussessioonide logimine"
 ---
-Rakenduse kasutussessioonide elutsüklisündmusi - tekkimist ja eri põhjustel lõppemis t- peab logima.
+Rakenduse kasutussessioonide elutsüklisündmusi — tekkimist ja eri põhjustel lõppemist — peab logima.
