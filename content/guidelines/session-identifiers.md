@@ -6,7 +6,7 @@ keeruline ära arvata ja mida ei saa ise konstrueerida või tuletada teiste
 kasutussessioonide identifikaatoritest.
 
 Tuleb arvestada, et juhuarvude generaatorid väljastavad samasuguse sisendmuutuja
-(seed) puhul küll juhuslikke arve, aga need on etteprognoositavad. Seetõttu
+(*seed*) puhul küll juhuslikke arve, aga need on prognoositavad. Seetõttu
 on oluline kasutada platvormi krüptograafiliselt turvalist juhuarvude generaatorit.
 
 Vaata lisaks:  

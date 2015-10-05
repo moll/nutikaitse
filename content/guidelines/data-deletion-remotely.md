@@ -13,6 +13,4 @@ tehaseseadete taastamine ja andmete kustutamine kaugjuhtimise teel (nt Android
 seadmetel läbi Android Device Manager keskkonna, Apple seadmetel läbi iCloud
 keskkonna).
 Autoriseerimisvõtmete võrgu kaudu edastamisel tuleb kasutada krüpteeritud
-andmevahetuskanalit (SSL/TLS abil, soovitavalt vähemalt TLS 1.0). Kasutada tuleb
-kõige uuemaid autoriseerimisstandardeid (nt delegeeritud ristautentimise
-standard OAuth 2.0).
+andmevahetuskanalit (SSL/TLS abil, soovitavalt vähemalt TLS 1.0). 

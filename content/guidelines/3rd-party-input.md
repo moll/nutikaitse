@@ -2,7 +2,7 @@
 title: "Kolmanda osapoole andmed"
 ---
 Erilist tähelepanu tuleb pöörata kõikidest ebausaldusväärsetest kolmandate
-osapoolte rakendustest (nt reklaamivõrgu tarkvara) vastu võetud või neisse
+osapoolte rakendustest (näiteks reklaamivõrgu tarkvara) vastu võetud või neisse
 saadetavatele andmetele (enne nende andmete kasutamist rakenduses).
 
 Nagu komponentide puhul, tasub ka andmeis eeldada ebaturvalisust. Enne väljast

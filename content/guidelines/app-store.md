@@ -1,7 +1,7 @@
 ---
 title: "Rakenduspoed"
 ---
-Enamik rakendustepoode jälgib oma rakendusi ning on suutelised ebaturvalise
-koodi avastamisel ja ohu ilmnemisel rakendusi lühikese etteteatamisega ka
-kaugeemaldama. Rakenduste levitamine ametlike rakendusepoodide kaudu annab seega
-toimemehhanismi juhuks, kui rakenduses peaks esinema tõsiseid turvaauke.
+Kuigi rakenduste levitamisel tuleb arvestada rakenduspoodide aktsepteerimisprotsessidest
+tulenevate viivitustega, on neist enamik suuteline ebaturvalise koodi avastamisel ja ohu
+ilmnemisel rakendusi kiiresti ka kaugeemaldama. Seega on soovitav rakendusi levitada 
+rakenduspoodide abil.

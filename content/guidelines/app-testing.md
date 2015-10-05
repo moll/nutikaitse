@@ -1,6 +1,6 @@
 ---
 title: "Turvatestimine"
 ---
-Rakenduse arendamisel tuleb regulaarselt läbi viia turvateste. Kuna rakenduse
-lähtekoodi saab binaarfailist teatud ulatuses taastada, ei tasu loota, et
-tarkvara kompileerimine turvavigu peidab.
+Rakenduse turvalisus peab tulenema rakenduse disainist ja regulaarseid turvateste
+sisaldavast arendusprotsessist mitte lähtekoodi, turvavigade, sideprotokolli, võrguaadressi vms. 
+salajasusel. Saladused tulevad lõpuks ikka välja.
