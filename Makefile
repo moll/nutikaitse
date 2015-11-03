@@ -34,8 +34,7 @@ guidelines:
 	done
 
 publish:
-	@bundle exec nanoc compile
-	@bundle exec nanoc deploy -t default
+	@bundle exec nanoc deploy --target nutikaitse.ee
 
 prune:
 	bundle exec nanoc prune --yes

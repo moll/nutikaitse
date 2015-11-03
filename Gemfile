@@ -1,5 +1,7 @@
 source "https://rubygems.org"
 gem "nanoc"
+gem "systemu"
+gem "nanoc-lftp"
 gem "nokogiri"
 
 group :development do
