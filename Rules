@@ -29,7 +29,11 @@ end
 
 ignore "*/_*/"
 
-compile KINDS["guideline"] do filterify item end
+compile KINDS["guideline"] do
+  filterify item
+  layout "guideline"
+end
+
 route KINDS["guideline"], &noop
 
 compile "*" do

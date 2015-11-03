@@ -1,5 +1,3 @@
-- item = @items["/guidelines/#{name}/"]
-
 %li.guideline{:class => item[:hidden] && "hidden", :name => item.name}
   %h3
     = item[:title]
@@ -9,4 +7,4 @@
     %input(type="checkbox")
     .checkbox
 
-  = item.compiled_content(:snapshot => :last)
+  = yield

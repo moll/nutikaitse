@@ -1,5 +1,10 @@
 include Nanoc::Helpers::Rendering
 
+def render_item(name)
+  item = @items[name]
+  item.compiled_content(:snapshot => :last)
+end
+
 def stylesheet_tag(path, opts = {})
   path = "/assets/stylesheets/#{path}.css" if path.is_a? Symbol
   args = opts_to_args(opts)
