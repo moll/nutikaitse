@@ -1,13 +1,12 @@
 - item = @items["/guidelines/#{name}/"]
 
-- unless item[:hidden]
-  %li.guideline{:class => item[:hidden] && "hidden", :name => item.name}
-    %h3
-      = item[:title]
-      = edit_link_to(item) if @config[:env] == "development"
+%li.guideline{:class => item[:hidden] && "hidden", :name => item.name}
+  %h3
+    = item[:title]
+    = edit_link_to(item) if @config[:env] == "development"
 
-    %label
-      %input(type="checkbox")
-      .checkbox
+  %label
+    %input(type="checkbox")
+    .checkbox
 
-    = item.compiled_content(:snapshot => :last)
+  = item.compiled_content(:snapshot => :last)
