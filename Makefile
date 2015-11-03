@@ -16,7 +16,7 @@ server:
 	@bundle exec nanoc view -p 4000 2>/dev/null
 
 publish:
-	@bundle exec nanoc deploy --target nutikaitse.ee
+	@bundle exec nanoc deploy --target default
 
 prune:
 	bundle exec nanoc prune --yes

@@ -24,6 +24,11 @@ checks:
     exclude: []
 
 deploy:
+  default:
+    kind: lftp
+    dst_host: nutikaitse.ee
+    dst_path: suunised
+
   moll:
     kind: rsync
     dst: "moll:/home/public/documents/nutikaitse"
@@ -35,8 +40,3 @@ deploy:
     # -t preserve modification times
     # -O omit directories from --times/-t
     options: ["-rvziOt", "--chmod=u=rwX,go=rX", "--delete-after"]
-
-  nutikaitse.ee:
-    kind: lftp
-    dst_host: nutikaitse.ee
-    dst_path: suunised
