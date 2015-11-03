@@ -1,7 +1,4 @@
 NANOC_ENV = production
-GUIDELINES = content/guidelines
-last_guideline = $$(basename "$$(ls "$(GUIDELINES)" | sort -n | tail -n1)" .md)
-next_guideline = $$(expr $(last_guideline) + 1)
 export NANOC_ENV
 
 love:
@@ -18,21 +15,6 @@ server:
 	@echo "Starting server on http://localhost:4000‥"
 	@bundle exec nanoc view -p 4000 2>/dev/null
 
-guideline:
-	@\
-	next=$(next_guideline); \
-	file="$(GUIDELINES)/$$(printf "%03g" $$next).md"; \
-	touch "$$file"; \
-	echo "Created $$file.";
-
-guidelines:
-	@\
-	echo "Creating guidelines. Press Ctrl-C to exit."; \
-	while i=$$(printf "%03g" $(next_guideline)); do \
-	  echo "Creating $(GUIDELINES)/$$i.md‥ Press Ctrl-D when done."; \
-	  cat | fmt -w80 >> "$(GUIDELINES)/$$i.md"; \
-	done
-
 publish:
 	@bundle exec nanoc deploy --target nutikaitse.ee
 
@@ -45,6 +27,5 @@ clean:
 .PHONY: love
 .PHONY: compile autocompile
 .PHONY: server
-.PHONY: guideline guidelines
 .PHONY: publish
 .PHONY: prune clean
