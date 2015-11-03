@@ -12,20 +12,6 @@
   scroll()
 })()
 
-;(function() {
-  var el = document.getElementById("progress")
-  var checkboxes = document.getElementsByTagName("input")
-
-  var done = document.getElementById("progress-done")
-  var update = updateChecked.bind(null, done, checkboxes)
-
-  document.getElementById("progress-total").textContent = checkboxes.length
-  document.addEventListener("change", update)
-  update()
-
-  el.style.display = ""
-})()
-
 function updateTops(tops, els) {
   for (var i = 0, l = els.length; i < l; ++i) {
     var id = els[i].getAttribute("href").slice(1)
@@ -48,10 +34,3 @@ function updateScroll(nav, tops, links) {
   i = links.length
   while (i--) links[i].className = section === links[i] ? "selected" : ""
 }
-
-function updateChecked(el, checkboxes) {
-  var done = Array.prototype.filter.call(checkboxes, isChecked)
-  el.textContent = done.length
-}
-
-function isChecked(el) { return el.checked }

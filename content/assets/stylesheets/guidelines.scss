@@ -183,7 +183,6 @@ li.guideline {
   margin-left: 0;
   overflow: hidden;
   line-height: 1.5;
-  padding-right: 70px;
 
   page-break-inside: avoid;
 
@@ -194,39 +193,6 @@ li.guideline {
     content: counter(guideline) ". ";
     display: inline;
     font-weight: bold;
-  }
-
-  label {
-    float: right;
-    margin-right: -70px;
-    width: 60px;
-    cursor: pointer;
-
-    // Leave some room for the focus highlight:
-    padding-right: 5px;
-    padding-bottom: 10px;
-  }
-
-  input[type=checkbox] { display: none; }
-
-  .checkbox {
-    margin-left: auto;
-    border: 2px solid #cccccc;
-    border-radius: 7px;
-    width: 32px;
-    height: 32px;
-
-    cursor: pointer;
-
-    background: inline-image("checkmark.png") center no-repeat;
-    background-size: image-width("checkmark.png") / 2;
-  }
-
-  input[type=checkbox]:checked + .checkbox {
-    //color: $green;
-    border-color: $green;
-    background-color: $green;
-    background-image: inline-image("checkmark-checked.png");
   }
 
   p {

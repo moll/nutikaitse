@@ -3,8 +3,4 @@
     = item[:title]
     = edit_link_to(item) if @config[:env] == "development"
 
-  %label
-    %input(type="checkbox")
-    .checkbox
-
   = yield
