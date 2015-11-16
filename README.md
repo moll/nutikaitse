@@ -57,6 +57,10 @@ Dokumendi nägemiseks ava brauseris <http://localhost:4000>.
 
 Suuniste lähtefailidesse tehtud muudatusi peaksid nägema brauseris pärast lehe värskendamist.
 
+### Pull request
+
+GitHubis _pull request_-i tegemiseks leiad rohkem infot [GitHubi pull requesti artiklist](https://help.github.com/articles/fork-a-repo/).
+
 
 Litsents
 --------
