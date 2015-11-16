@@ -26,7 +26,7 @@ Kõik huvilised on oodatud andma suuniste kohta tagasisidet. Ettepanekuid, küsi
 
 1. Algatades uus [diskussiooniteema][issues] GitHubis.
 2. Viies muudatused sisse suuniste lähtefailidesse ja tehes [GitHubis][repo] _pull request_.  
-   Lokaalselt suunistega töötamiseks leiab [tehnilisi juhiseid](#tehnilised-juhised) allpool. 
+   Lokaalselt suunistega töötamiseks leiab [tehnilisi juhiseid](#tehnilised-juhised) altpoolt.
 
 Dokumendi viimast versiooni saab näha aadressil <http://nutikaitse.ee/suunised/>.
 
