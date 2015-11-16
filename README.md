@@ -37,9 +37,16 @@ Suunised genereeritakse [`content/guidelines`](./content/guidelines) kaustas ole
 
 ### Installimine
 
+Kopeeri koodihoidla oma arvutisse:
+
+```sh
+git clone https://github.com/moll/nutikaitse.git
+```
+
 Veendu, et arvutis on töötav [Ruby](https://www.ruby-lang.org) installatsioon. Seejärel installi genereerimiseks vajalikud teegid:
 
 ```sh
+cd nutikaitse
 gem install bundler
 bundle install
 ```
