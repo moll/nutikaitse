@@ -24,7 +24,7 @@ Tagasiside
 ----------
 Kõik huvilised on oodatud andma suuniste kohta tagasisidet. Ettepanekuid, küsimusi, täiendusi või arutelu saab algatada kahte moodi:
 
-1. Algatades uus [diskussiooniteema][issues] GitHubis.
+1. Algatades uue [diskussiooniteema][issues] GitHubis.
 2. Viies muudatused sisse suuniste lähtefailidesse ja tehes [GitHubis][repo] _pull request_.  
    Lokaalselt suunistega töötamiseks leiab [tehnilisi juhiseid](#tehnilised-juhised) altpoolt.
 
