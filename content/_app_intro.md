@@ -1,3 +1,7 @@
+![](<%= image_path("app.png") %>){: .icon height="72px"}
+
+## Rakenduse kaitse
+
 Rakenduse loomisel tuleb veenduda, et kasutatavad kolmandate osapoolte poolt loodud tarkvara valmiskomponendid on turvalised. Samuti tuleb veenduda, et liidestatavad võrguteenused on turvalised.
 
 Nutitelefoni rakendustele saab anda automaatse juurdepääsu tasulistele funktsioonide nagu telefonikõned, SMS ja MMS, rändlusandmed, NFC maksed jne. Selliste eelisjuurdepääsuga rakenduste loomisel tuleb eriti hoolikalt võimalikke kuritarvitusi arvesse võtta. Selgitada tuleb rakenduses olevad potentsiaalsed nõrgad kohad, analüüsida mis võimalused need võimalikele ründajatele annavad ja kuidas tasulistele teenustele ligipääsu piirata.
