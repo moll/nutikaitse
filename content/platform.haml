@@ -1,5 +1,5 @@
 ---
-title: "Rakenduste platvorminõuded"
+title: "Nutirakenduste platvorminõuded"
 ---
 - content_for :head do
   = stylesheet_tag :platform
@@ -7,7 +7,7 @@ title: "Rakenduste platvorminõuded"
 %header#header
   %center
     %img.logo(alt="Nutikaitse"){:src => image_path("nutikaitse.png")}
-    %h1 Nutirakenduste platvorminõuded
+    %h1= @item[:title]
     %h2 Vaata Maailma SA, Majandus- ja kommunikatsiooniministeerium, <time>3. dets 2014</time>
 
 %section#requirements
