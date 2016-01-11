@@ -13,7 +13,7 @@ title: "NutiKaitse"
     %img.auxlogo(alt=mkm width=240){:src => image_path("mkm.jpeg")}
 
 %section#intro
-  %center= @items["/_intro/"].compiled_content
+  %center= find_item("/_intro/").compiled_content
 
 #toc
   %center
@@ -21,19 +21,19 @@ title: "NutiKaitse"
       %h2 Sisukord
       %ol
         %li
-          %a(href="#authentication")= @items["/_auth_intro/"][:title]
+          %a(href="#authentication")= find_item("/_auth_intro/")[:title]
         %li
-          %a(href="#data")= @items["/_data_intro/"][:title]
+          %a(href="#data")= find_item("/_data_intro/")[:title]
         %li
-          %a(href="#network")= @items["/_network_intro/"][:title]
+          %a(href="#network")= find_item("/_network_intro/")[:title]
         %li
-          %a(href="#app")= @items["/_app_intro/"][:title]
+          %a(href="#app")= find_item("/_app_intro/")[:title]
         %li
-          %a(href="#glossary")= @items["/_glossary/"][:title]
+          %a(href="#glossary")= find_item("/_glossary/")[:title]
 
 %section#authentication
   %center
-    = @items["/_auth_intro/"].compiled_content
+    = find_item("/_auth_intro/").compiled_content
 
     %ol.guidelines
       = render_item "/guidelines/authentication-strength/"
@@ -57,7 +57,7 @@ title: "NutiKaitse"
 
 %section#data
   %center
-    = @items["/_data_intro/"].compiled_content
+    = find_item("/_data_intro/").compiled_content
 
     %ol.guidelines
       = render_item "/guidelines/data-sensitivity/"
@@ -79,7 +79,7 @@ title: "NutiKaitse"
 
 %section#network
   %center
-    = @items["/_network_intro/"].compiled_content
+    = find_item("/_network_intro/").compiled_content
 
     %ol.guidelines
       = render_item "/guidelines/network-encryption/"
@@ -97,7 +97,7 @@ title: "NutiKaitse"
 
 %section#app
   %center
-    = @items["/_app_intro/"].compiled_content
+    = find_item("/_app_intro/").compiled_content
 
     %ol.guidelines
       = render_item "/guidelines/app-permissions/"
@@ -122,6 +122,6 @@ title: "NutiKaitse"
 
 %section#glossary
   %center
-    = @items["/_glossary/"].compiled_content
+    = find_item("/_glossary/").compiled_content
 
 = javascript_tag :guidelines

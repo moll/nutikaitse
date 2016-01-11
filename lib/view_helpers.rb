@@ -1,7 +1,19 @@
 include Nanoc::Helpers::Rendering
 
+def find_item(name)
+  if item = @items["#{name.chop}.#{@config[:lang]}/"] || @items[name]
+    item
+  else
+    raise "Item not found: #{name}"
+  end
+end
+
+def items_by_kind(kind)
+  items.select {|item| item[:kind] == kind }
+end
+
 def render_item(name)
-  item = @items[name]
+  item = find_item(name)
   item.compiled_content(:snapshot => :last)
 end
 
@@ -15,6 +27,10 @@ def javascript_tag(path, opts = {})
   path = "/assets/javascripts/#{path}.js" if path.is_a?(Symbol)
   args = opts_to_args(opts)
   %(<script src="#{path}"#{args}></script>)
+end
+
+def image_path(img)
+  Compass.configuration.http_images_path + "/" + img
 end
 
 def opts_to_args(opts)
@@ -32,10 +48,6 @@ def opts_to_args(opts)
   args.empty?? "" : " " + args.join(" ")
 end
 
-def items_by_kind(kind)
-  items.select {|item| item[:kind] == kind }
-end
-
 def edit_link_to(item)
   case ENV["GEDITOR"]
   when "mvim"
@@ -45,8 +57,4 @@ def edit_link_to(item)
   end
 
   %(<a href="#{url}" class="edit">✎</a>)
-end
-
-def image_path(img)
-  Compass.configuration.http_images_path + "/" + img
 end

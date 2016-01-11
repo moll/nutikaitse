@@ -20,9 +20,6 @@ def filterify(item)
 end
 
 def routify(item, identifier = item.identifier)
-  # Return identifiers already containing an extension as is.
-  return identifier.chop if identifier =~ /\./
-
   case ext = item[:extension].to_s
   when "haml", "md", "html"; identifier + "index.html"
   when "scss"; identifier.chop + ".css"

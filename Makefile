@@ -1,5 +1,7 @@
 NANOC_ENV = production
+NANOC_LANG = et
 export NANOC_ENV
+export NANOC_LANG
 
 love:
 	@echo "Feel like makin' love."

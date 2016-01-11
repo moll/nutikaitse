@@ -11,7 +11,7 @@ data_sources:
     type: filesystem_unified
     items_root: /
     layouts_root: /
-    allow_periods_in_identifiers: false
+    allow_periods_in_identifiers: true
     encoding: utf-8
 
 checks:
