@@ -1,4 +1,8 @@
-## Mõisted ja viited
+---
+title: Mõisted ja viited
+---
+
+## <%= @item[:title] %>
 
 ENISA
 : <http://www.enisa.europa.eu/activities/Resilience-and-CIIP/critical-applications/smartphone-security-1/smartphone-secure-development-guidelines>

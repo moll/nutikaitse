@@ -1,6 +1,9 @@
+---
+title: Autentimine
+---
 ![](<%= image_path("authentication.png") %>){: .icon height="72px"}
 
-## Autentimine
+## <%= @item[:title] %>
 
 Tähelepanu tuleb pöörata kasutajate autentimisele ja tagada, et nutirakenduses autenditud kasutaja kasutussessioon oleks kaitstud ja seda ei oleks võimalik üle võtta.
 

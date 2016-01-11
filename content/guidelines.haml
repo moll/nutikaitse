@@ -21,15 +21,15 @@ title: "NutiKaitse"
       %h2 Sisukord
       %ol
         %li
-          %a(href="#authentication") Autentimine
+          %a(href="#authentication")= @items["/_auth_intro/"][:title]
         %li
-          %a(href="#data") Andmete kaitse seadmes
+          %a(href="#data")= @items["/_data_intro/"][:title]
         %li
-          %a(href="#network") Andmete kaitse võrgus
+          %a(href="#network")= @items["/_network_intro/"][:title]
         %li
-          %a(href="#app") Rakenduse kaitse
+          %a(href="#app")= @items["/_app_intro/"][:title]
         %li
-          %a(href="#glossary") Mõisted ja viited
+          %a(href="#glossary")= @items["/_glossary/"][:title]
 
 %section#authentication
   %center

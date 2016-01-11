@@ -1,6 +1,9 @@
+---
+title: Rakenduse kaitse
+---
 ![](<%= image_path("app.png") %>){: .icon height="72px"}
 
-## Rakenduse kaitse
+## <%= @item[:title] %>
 
 Rakenduse loomisel tuleb veenduda, et kasutatavad kolmandate osapoolte poolt loodud tarkvara valmiskomponendid on turvalised. Samuti tuleb veenduda, et liidestatavad võrguteenused on turvalised.
 

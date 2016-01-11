@@ -1,6 +1,9 @@
+---
+title: Andmete kaitse seadmes
+---
 ![](<%= image_path("data.png") %>){: .icon height="72px"}
 
-## Andmete kaitse seadmes
+## <%= @item[:title] %>
 
 Selleks, et viähendada seadmes asuvate andmete sh isikuandmete kolmandatele osapooltele lekkimise riski, tuleb rakenduses läbi mõelda ja kasutusele võtta vastavad riskide maandamise meetmed.
 
