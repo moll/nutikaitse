@@ -1,6 +1,6 @@
 ---
 title: Mobile App Secure Development Guidelines
-coordinator: Look@World
+coordinator: Look@World Foundation
 toc: Contents
 layout: ["guidelines", "default"]
 ---
