@@ -1,3 +1,5 @@
+RELATIVIZE = %w[html css]
+
 # https://github.com/Compass/compass/wiki/nanoc-integration suggests
 # guarding against multiple reloads.
 unless defined? Compass
@@ -17,6 +19,12 @@ def filterify(item)
   end
 
   true
+end
+
+def relativize(item)
+  return unless rep.raw_path
+  ext = rep.raw_path[/[^.]+$/]
+  filter :relativize_paths, :type => ext.to_sym if RELATIVIZE.include?(ext)
 end
 
 def routify(item, identifier = item.identifier)
