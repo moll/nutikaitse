@@ -43,7 +43,7 @@ Teenusserver
 : Käesolevas dokumendis loetakse teenusserveriks nutiseadmest väljaspool asuvat teenusepakkuja tugiteenuste komplekti, mis on vajalik nutirakenduse täielikuks toimimiseks.
 
 ISKE
-: Riigi poolt väljatöötatud [„infosüsteemide kolmeastmeline etalonturbe süsteem“](https://www.ria.ee/iske/), mis on loodud eelkõige riigi ja kohaliku omavalitsuse infosüsteemidele ning nendega seotud infovaradele turvalisuse tagamiseks. ISKE väljatöötamisel ja arendamisel on aluseks võetud Saksamaa BSI (Bundesamt für Sicherheit in der Informationstechnik) avaldatav infoturbe standard (IT-Grundschutz).
+: Riigi poolt väljatöötatud [„infosüsteemide kolmeastmeline etalonturbe süsteem“](https://www.ria.ee/ee/iske.html), mis on loodud eelkõige riigi ja kohaliku omavalitsuse infosüsteemidele ning nendega seotud infovaradele turvalisuse tagamiseks. ISKE väljatöötamisel ja arendamisel on aluseks võetud Saksamaa BSI (Bundesamt für Sicherheit in der Informationstechnik) avaldatav infoturbe standard (IT-Grundschutz).
 
 AKI
 : [Andmekaitse Inspektsioon](https://www.aki.ee)
