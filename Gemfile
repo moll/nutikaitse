@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-gem "nanoc"
+gem "nanoc", ">= 3", "< 4"
 gem "systemu"
 gem "nanoc-lftp"
 gem "nokogiri"

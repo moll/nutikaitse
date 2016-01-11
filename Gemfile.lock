@@ -18,7 +18,7 @@ GEM
       sass (>= 3.3.0, < 3.5)
     compass-import-once (1.0.5)
       sass (>= 3.2, < 3.5)
-    cri (2.6.1)
+    cri (2.7.0)
       colored (~> 1.2)
     ffi (1.9.3)
     formatador (0.2.4)
@@ -42,7 +42,7 @@ GEM
     method_source (0.8.2)
     mini_portile (0.5.3)
     multi_json (1.10.1)
-    nanoc (3.7.3)
+    nanoc (3.8.0)
       cri (~> 2.3)
     nanoc-lftp (1.0.0)
       nanoc (>= 3.6.7, < 4.0.0)
@@ -74,8 +74,11 @@ DEPENDENCIES
   guard-nanoc
   haml
   kramdown
-  nanoc
+  nanoc (>= 3, < 4)
   nanoc-lftp
   nokogiri
   sass
   systemu
+
+BUNDLED WITH
+   1.11.2
