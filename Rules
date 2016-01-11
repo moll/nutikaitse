@@ -11,7 +11,6 @@
 #   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
 #   because “*” matches zero or more characters.
 #
-PAGE_EXTENSION = %w[haml md]
 LANGUAGES = %w[en et]
 KINDS = {"guideline" => %r(^/guidelines/[^/]+/$)}
 noop = proc {}
@@ -46,7 +45,15 @@ route KINDS["guideline"], &noop
 
 compile "*" do
   filterify item
-  layout "default" if PAGE_EXTENSION.include?(item[:extension])
+
+  if layouts = item[:layout]
+    if layouts.is_a? Array
+      layouts.each(&method(:layout))
+    else
+      layout layouts
+    end
+  end
+
   relativize item if @config[:env] == "production"
 end
 
