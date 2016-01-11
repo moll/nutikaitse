@@ -1,8 +1,8 @@
 include Nanoc::Helpers::Rendering
 
 def find_item(name)
-  if item = @items["#{name.chop}.#{@config[:lang]}/"] || @items[name]
-    item
+  if found = @items["#{name.chop}.#{@item[:lang]}/"] || @items[name]
+    found
   else
     raise "Item not found: #{name}"
   end

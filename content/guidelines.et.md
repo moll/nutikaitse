@@ -1,3 +1,9 @@
+---
+title: Nutirakenduste turvalise arenduse suunised
+coordinator: Vaata Maailma SA
+toc: Sisukord
+layout: ["guidelines", "default"]
+---
 <div class="left">
 Nutirakenduste turvalise arenduse suunised ja Nutirakenduste platvorminõuded on valminud Majandus- ja kommunikatsiooniministeeriumi tellimusel ja Vabariigi Valitsuse tegevusprogrammis (2011.a kinnitatud) toodud tegevuste kirjeldamiseks (Nutitelefonides rakendatavate e-teenuste turvanõuete väljatöötamine; Toetatavate nutitelefonide operatsioonisüsteemide ja brauserite valimine; Nutitelefonide operatsioonisüsteemidele ja brauseritele vastava koosvõime nõuete kirjutamine).
 

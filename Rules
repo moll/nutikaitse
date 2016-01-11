@@ -17,7 +17,6 @@ noop = proc {}
 
 preprocess do
   @config[:env] = ENV["NANOC_ENV"] ? ENV["NANOC_ENV"].downcase : "production"
-  @config[:lang] = ENV["NANOC_LANG"] || "et"
 
 	@items.each do |item|
     KINDS.find do |type, path|
@@ -57,7 +56,9 @@ compile "*" do
   relativize item if @config[:env] == "production"
 end
 
-route "/guidelines/" do "/index.html" end
+route "/guidelines.et/" do "/index.html" end
+route "/guidelines.en/" do "/index.en.html" end
+
 route "/_*", &noop
 
 route "*" do routify item end

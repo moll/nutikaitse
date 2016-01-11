@@ -1,25 +1,24 @@
----
-title: "NutiKaitse"
-layout: "default"
----
+- content_for :title do
+  NutiKaitse
+
 - content_for :head do
   = stylesheet_tag :guidelines
 
 %header#header
   %center
     %img.logo(alt="Nutikaitse"){:src => image_path("nutikaitse.png")}
-    %h1 Nutirakenduste turvalise arenduse suunised
-    %h2 Vaata Maailma SA
+    %h1= item[:title]
+    %h2= item[:coordinator]
     - mkm = "Majandus- ja kommunikatsiooniministeerium"
     %img.auxlogo(alt=mkm width=240){:src => image_path("mkm.jpeg")}
 
 %section#intro
-  %center= find_item("/_intro/").compiled_content
+  %center= yield
 
 #toc
   %center
     %nav
-      %h2 Sisukord
+      %h2= item[:toc]
       %ol
         %li
           %a(href="#authentication")= find_item("/_auth_intro/")[:title]
