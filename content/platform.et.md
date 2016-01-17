@@ -1,3 +1,8 @@
+---
+title: "Nutirakenduste platvorminõuded"
+subtitle: Vaata Maailma SA, Majandus- ja kommunikatsiooniministeerium, <time>3. dets 2014</time>
+layout: ["platform", "default"]
+---
 <div class="left">
 ![](<%= image_path("network.png") %>){: .icon height="72px"}
 
@@ -17,7 +22,7 @@ WAP 2.0 seadmed peaksid toetama hästi XHTML Basic 1.1 standardit (WAP 1.0 oli W
 <div class="right">
 ![](<%= image_path("app.png") %>){: .icon height="72px"}
 
-## “Native” rakendused
+## _Native_ rakendused
 
 Native rakenduste juures soovitused ja nõuded peaksid lähtuma kasutajate arvudest Eestis, mujal maailmas ja teatud määral ka
 prognoosidest tulevikus.

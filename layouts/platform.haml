@@ -1,0 +1,11 @@
+- content_for :head do
+  = stylesheet_tag :platform
+
+%header#header
+  %center
+    %img.logo(alt="NutiKaitse"){:src => image_path("nutikaitse.png")}
+    %h1= @item[:title]
+    %h2= @item[:subtitle]
+
+%section#requirements
+  %center= yield

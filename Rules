@@ -58,6 +58,8 @@ end
 
 route "/guidelines.et/" do "/index.html" end
 route "/guidelines.en/" do "/index.en.html" end
+route "/platform.et/" do "/platform/index.html" end
+route "/platform.en/" do "/platform/index.en.html" end
 
 route "/_*", &noop
 
