@@ -14,6 +14,10 @@
     -# http://www.chromium.org/developers/how-tos/chrome-frame-getting-started
     %meta(http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1")
 
+    - %w[16x16 32x32 96x96].each do |size|
+      - href = image_path("favicon-#{size}.png")
+      %link(rel="icon" type="image/png" sizes=size href=href)
+
     = content_for(@item, :head)
     = @config[:env] == "development" ? render("_livereload") : ""
 
