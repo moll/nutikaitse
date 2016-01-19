@@ -8,7 +8,9 @@
   %center
     %img.logo(alt="Nutikaitse"){:src => image_path("nutikaitse.png")}
     %h1= item[:title]
-    %h2= item[:coordinator]
+    %h2
+      NutiKaitse 2017<br>
+      = item[:coordinator]
 
     - mkm_logo = find_item("/assets/images/mkm/")
     %img.auxlogo(width=240){:alt => mkm_logo[:title], :src => mkm_logo.path}
